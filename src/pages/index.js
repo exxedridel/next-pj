@@ -83,7 +83,7 @@ export default function Home() {
             </div>
               <a href="https://wa.me/message/QNWKISFC6MBJI1">
                 <button className="btn btn-primary nav-btn" type="submit">
-                  LET'S CONNECT
+                  LET&apos;S CONNECT
                 </button>
               </a>
           </div>
