@@ -1,0 +1,39 @@
+.logo {
+   margin-right: 4px;
+ }
+ 
+ a.navbarBrand {
+   padding-right: 25px;
+ }
+ @media (min-width: 992px) {
+   a.navbarBrand {
+     border-right: 1px solid rgba(128, 128, 128, 0.363);
+   }
+ }
+ 
+ a.navLink,
+ .navBtn {
+   font-size: 15px;
+ }
+ 
+ .navBtn {
+   width: auto;
+   background: #2374ab;
+   border-color: #2374ab;
+ }
+ @media (max-width: 992px) {
+   .navBtn {
+     width: 100%;
+   }
+ }
+ 
+ .navCont {
+   margin-inline: auto;
+   max-width: 36rem;
+ }
+ @media (min-width: 992px) {
+  .navCont {
+    max-width: 71rem;
+  }
+ }
+ 
