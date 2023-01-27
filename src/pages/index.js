@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
 // import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -17,91 +17,78 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        
-        <nav className="navbar navbar-expand-lg bg-light box-shadow">
-          <div className="container-fluid nav-cont">
-            <Link className="navbar-brand" href="/">
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={90}
-                height={24}
-                priority
-              />
+
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+          <div className="container-fluid">
+            <a className="navbar-brand" href="#">
               Set<b>apps</b>
-            </Link>
+            </a>
             <button
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0 bold">
+            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" href="/">
-                    HOME
-                  </Link>
+                  <a className="nav-link active" aria-current="page" href="#">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Features
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Pricing
+                  </a>
                 </li>
                 <li className="nav-item dropdown">
-                  <Link
+                  <a
                     className="nav-link dropdown-toggle"
-                    href="/"
-                    id="navbarDropdown"
+                    href="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    SERVICES
-                  </Link>
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdown"
-                  >
+                    Dropdown link
+                  </a>
+                  <ul className="dropdown-menu">
                     <li>
-                      <Link href="/" className="dropdown-item">
-                        Webapp calculator
-                      </Link>
+                      <a className="dropdown-item" href="#">
+                        Action
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="/">
-                        Logo-svg creation
-                      </Link>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
                     </li>
                     <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" href="/">
-                        Improve performance
-                      </Link>
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item">
-                  <Link href="/" className="nav-link">
-                    ABOUT
-                  </Link>
-                </li>
               </ul>
+            </div>
               <a href="https://wa.me/message/QNWKISFC6MBJI1">
                 <button className="btn btn-primary nav-btn" type="submit">
-                  LET&apos;S CONNECT
+                  LET'S CONNECT
                 </button>
               </a>
-            </div>
           </div>
         </nav>
-        
+
         {/* <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
