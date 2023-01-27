@@ -1,6 +1,6 @@
 import Head from "next/head";
-// import Image from "next/image";
-// import Link from "next/link";
+import Image from "next/image";
+import Link from "next/link";
 // import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -17,8 +17,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        Hola pendejos
-        {/* <nav className="navbar navbar-expand-lg bg-light box-shadow">
+        
+        <nav className="navbar navbar-expand-lg bg-light box-shadow">
           <div className="container-fluid nav-cont">
             <Link className="navbar-brand" href="/">
               <Image
@@ -100,7 +100,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </nav> */}
+        </nav>
+        
         {/* <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
