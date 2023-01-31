@@ -31,9 +31,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 bold">
             <li className="nav-item">
-              <a className={`nav-link active ${styles.navLink}`} aria-current="page" href="#">
+              <Link href="/" className={`nav-link active ${styles.navLink}`} aria-current="page" >
                 HOME
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -68,7 +68,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <Link href="#" className={`nav-link ${styles.navLink}`}>
+              <Link href="about" className={`nav-link ${styles.navLink}`}>
                 ABOUT
               </Link>
             </li>

@@ -2,7 +2,6 @@ import Head from "next/head";
 // import Image from "next/image";
 // import Link from "next/link";
 // import { Inter } from "@next/font/google";
-import Navbar from "../components/Navbar";
 import styles from "@/styles/Home.module.css";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -17,9 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
       <main className={styles.main}>
-
+        <h1>Home</h1>
         {/* <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
