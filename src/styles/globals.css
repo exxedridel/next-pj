@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  min-height: 89vh;
+}
+
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;
