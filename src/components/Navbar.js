@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import en from "../../public/locale/en";
+import es from "../../public/locale/es";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : es;
+
   return (
     <nav className="navbar navbar-expand-lg bg-light box-shadow">
       <div className={`container-fluid ${styles.navCont}`}>
@@ -31,8 +38,12 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 bold">
             <li className="nav-item">
-              <Link href="/" className={`nav-link active ${styles.navLink}`} aria-current="page" >
-                HOME
+              <Link
+                href="/"
+                className={`nav-link active ${styles.navLink}`}
+                aria-current="page"
+              >
+                {t.navbar.home}
               </Link>
             </li>
             <li className="nav-item dropdown">
@@ -44,17 +55,17 @@ const Navbar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                SERVICES
+                {t.navbar.services}
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <Link href="#" className="dropdown-item">
-                    Web app calculator
+                    {t.navbar.services1}
                   </Link>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Logo-svg creation
+                    {t.navbar.services2}
                   </a>
                 </li>
                 <li>
@@ -62,20 +73,57 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Improve performance
+                    {t.navbar.services3}
                   </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
               <Link href="about" className={`nav-link ${styles.navLink}`}>
-                ABOUT
+                {t.navbar.products}
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="about" className={`nav-link ${styles.navLink}`}>
+                {t.navbar.about}
               </Link>
             </li>
           </ul>
+          <ul className="navbar-nav me-5 mb-2 mb-lg-0">
+            <li className="nav-item dropdown">
+              <a
+                className={`nav-link dropdown-toggle ${styles.navLink}`}
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {t.navbar.language}
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <Link className="dropdown-item" href="/" locale="en">
+                    English
+                  </Link>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <Link className="dropdown-item" href="/" locale="es">
+                    Español
+                  </Link>
+                </li>
+              </ul>
+            </li>
+          </ul>
           <a href="https://wa.me/message/QNWKISFC6MBJI1">
-            <button className={`btn btn-primary ${styles.navBtn}`} type="submit">
-              LET&apos;S CONNECT
+            <button
+              className={`btn btn-primary ${styles.navBtn}`}
+              type="submit"
+            >
+              {t.navbar.contactUs}
             </button>
           </a>
         </div>

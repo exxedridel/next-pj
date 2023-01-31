@@ -6,7 +6,6 @@ import Navbar from "@/components/Navbar";
 import { useRouter } from "next/router";
 import en from "../../public/locale/en";
 import es from "../../public/locale/es";
-import Link from "next/link";
 // import styles from "@/styles/Home.module.css";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -26,15 +25,8 @@ export default function Home() {
 
       <Navbar />
       <main>
-        <Link href="/" locale="en">
-          EN
-        </Link>
-        &nbsp;
-        <Link href="/" locale="es">
-          ES
-        </Link>
-        <h1>{t.title}</h1>
-        <p>{t.description}</p>
+        <h1>{t.home.title}</h1>
+        <p>{t.home.description}</p>
       </main>
     </>
   );
