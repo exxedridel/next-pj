@@ -10,6 +10,13 @@ export default function Document() {
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
           crossOrigin="anonymous"
         />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@300;400;500&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />

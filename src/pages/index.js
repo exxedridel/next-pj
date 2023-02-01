@@ -3,6 +3,7 @@ import Head from "next/head";
 // import Link from "next/link";
 // import { Inter } from "@next/font/google";
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 import { useRouter } from "next/router";
 import en from "../../public/locale/en";
 import es from "../../public/locale/es";
@@ -24,8 +25,9 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <main>
-        <h1>{t.home.title}</h1>
+      <Hero />
+      <main className="container">
+        <h1 className="ff-sans-title fs-900">{t.home.title}</h1>
         <p>{t.home.description}</p>
       </main>
     </>

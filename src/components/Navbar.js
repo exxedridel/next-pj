@@ -11,7 +11,7 @@ const Navbar = () => {
   const t = locale === "en" ? en : es;
 
   return (
-    <nav className="navbar navbar-expand-lg bg-light box-shadow">
+    <nav className="navbar navbar-expand-lg bg-light container">
       <div className={`container-fluid ${styles.navCont}`}>
         <a className={`navbar-brand ${styles.navbarBrand}`} href="#">
           <Image
