@@ -17,8 +17,8 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Navbar />
-      <main>
-        <h1>{t.about.title}</h1>
+      <main className="container">
+        <h1 className="fs-900">{t.about.title}</h1>
         <p>{t.about.description}</p>
       </main>
     </>

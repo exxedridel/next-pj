@@ -27,8 +27,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <main className="container">
-        <h1 className="ff-sans-title fs-900">{t.home.title}</h1>
-        <p>{t.home.description}</p>
+        {/* <h1>{t.home.title}</h1>
+        <p>{t.home.description}</p> */}
       </main>
     </>
   );

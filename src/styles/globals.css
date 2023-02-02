@@ -13,10 +13,10 @@
   /* font-families */
   --ff-serif: "Open Sans", sans-serif;
   --ff-sans-title: "Raleway", sans-serif;
-  --ff-sans-display: "Merriweather", serif;
+  --ff-sans-cursive: "Merriweather", serif;
 
   /* font-sizes */
-  --fs-900: clamp(2.7rem, 6vw + 1rem, 5.5rem);
+  --fs-900: clamp(1.5rem, 4.5vw + 1rem, 3.5rem);
   --fs-800: 2rem;
   --fs-700: 1.75rem;
   --fs-600: 1.5rem;
@@ -66,6 +66,7 @@ h5,
 h6,
 p {
   font-weight: 400;
+  margin: 0;
 }
 
 /* make images easier to work with */
@@ -127,8 +128,8 @@ select {
 .ff-sans-title {
   font-family: var(--ff-sans-title);
 }
-.ff-sans-normal {
-  font-family: var(--ff-sans-display);
+.ff-sans-cursive {
+  font-family: var(--ff-sans-cursive);
 }
 
 .letter-spacing-1 {
@@ -180,6 +181,10 @@ select {
 /* -------------------------------------------- */
 /*                Utility classes               */
 /*----------------------------------------------*/
+
+.bold-text {
+  font-weight: 700;
+}
 
 .flex {
   display: flex;

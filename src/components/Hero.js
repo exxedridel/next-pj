@@ -1,7 +1,14 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
+import en from "../../public/locale/en";
+import es from "../../public/locale/es";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : es;
+
   function scrollToContent() {
     const element = document.getElementById("main-content");
     element.scrollIntoView();
@@ -17,19 +24,23 @@ const Hero = () => {
         height={1333}
         priority
       />
-      <div onClick={scrollToContent} className={`container ${styles.overlap}`}>
-        <h1>
-          We make your <b>vision</b>
+      <div
+        onClick={scrollToContent}
+        className={`container flow-normal ${styles.overlap}`}
+      >
+        <h1 className="ff-sans-title fs-900">
+          {t.hero.title1} <b>{t.hero.title2}</b>
           <br />
-          come to <b>life</b>
+          {t.hero.title3} <b>{t.hero.title4}</b>
         </h1>
-        <p>
-          We develop SaaS solutions, and everything around it to make them
-          sustainable. With us, you leverage more than 20 years of software
-          development success to make your vision come to life.
+        <p className="fs-500">
+          {t.hero.description}
         </p>
-        <button className={`btn btn-primary ${styles.navBtn}`} type="submit">
-          Learn more
+        <button
+          className={`btn btn-primary uppercase fs-200 bold-text ${styles.navBtn}`}
+          type="submit"
+        >
+          {t.hero.learnMore}
         </button>
       </div>
     </section>

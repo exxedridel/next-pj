@@ -11,8 +11,8 @@ const Navbar = () => {
   const t = locale === "en" ? en : es;
 
   return (
-    <nav className="navbar navbar-expand-lg bg-light container">
-      <div className={`container-fluid ${styles.navCont}`}>
+    <nav className={`navbar navbar-expand-lg container ${styles.navCont}`}>
+      <div className={`container-fluid`}>
         <a className={`navbar-brand ${styles.navbarBrand}`} href="#">
           <Image
             src="/setapps-logo.svg"
