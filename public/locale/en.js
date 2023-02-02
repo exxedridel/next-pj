@@ -16,7 +16,7 @@ export default {
     title3: "come to",
     title4: "life",
     description:
-      "We develop web app solutions, and everything around it to make them sustainable. With us, you leverage more than 10 years of software development success to make your vision come to life.",
+      "We develop Web App solutions, and everything around it to make them sustainable. With us, you leverage more than 10 years of software development success to make your vision come to life.",
     learnMore: "Learn more",
   },
   home: {

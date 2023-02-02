@@ -26,14 +26,14 @@ const Hero = () => {
       />
       <div
         onClick={scrollToContent}
-        className={`container flow-normal ${styles.overlap}`}
+        className={`container ${styles.overlap}`}
       >
-        <h1 className="ff-sans-title fs-900">
+        <h1 className="ff-sans-title fs-800">
           {t.hero.title1} <b>{t.hero.title2}</b>
           <br />
           {t.hero.title3} <b>{t.hero.title4}</b>
         </h1>
-        <p className="fs-500">
+        <p className="fs-400">
           {t.hero.description}
         </p>
         <button

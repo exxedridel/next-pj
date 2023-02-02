@@ -15,7 +15,7 @@ export default {
     title2: "visión",
     title3: "una",
     title4: "realidad",
-    description: "Desarrollamos soluciones web app y todo lo necesario para hacerlas sustentables. Con nosotros, te respaldan más de 10 años de éxito en desarrollo de software para hacer que tu visión cobre vida.",
+    description: "Desarrollamos soluciones Web App y todo lo necesario para hacerlas sustentables. Con nosotros, te respaldan más de 10 años de éxito en desarrollo de software para hacer que tu visión cobre vida.",
     learnMore: "Saber más",
   },
   home: {
