@@ -37,7 +37,7 @@ const Hero = () => {
           {t.hero.description}
         </p>
         <button
-          className={`btn btn-primary uppercase fs-200 bold-text ${styles.navBtn}`}
+          className={`btn btn-primary uppercase ff-sans-title ${styles.heroBtn}`}
           type="submit"
         >
           {t.hero.learnMore}

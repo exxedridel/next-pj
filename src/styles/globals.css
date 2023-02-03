@@ -183,10 +183,6 @@ select {
 /*                Utility classes               */
 /*----------------------------------------------*/
 
-.bold-text {
-  font-weight: 700;
-}
-
 .flex {
   display: flex;
   gap: 1rem;

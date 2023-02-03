@@ -20,8 +20,14 @@ a.navLink,
 
 .navBtn {
   width: auto;
+  padding: 10px 24px;
   background: #2374ab;
   border-color: #2374ab;
+  transition: all 0.3s ease;
+}
+.navBtn:hover {
+  background: #00BB2D;
+  border-color: #00BB2D;
 }
 @media (max-width: 992px) {
   .navBtn {

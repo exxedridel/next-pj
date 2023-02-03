@@ -36,7 +36,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0 bold">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link
                 href="/"
@@ -89,7 +89,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <ul className="navbar-nav me-5 mb-2 mb-lg-0">
+          <ul className="navbar-nav me-3 mb-2 mb-lg-0">
             <li className="nav-item dropdown">
               <a
                 className={`nav-link dropdown-toggle ${styles.navLink}`}
@@ -120,7 +120,7 @@ const Navbar = () => {
           </ul>
           <a href="https://wa.me/message/QNWKISFC6MBJI1">
             <button
-              className={`btn btn-primary ${styles.navBtn}`}
+              className={`btn btn-primary ff-sans-title ${styles.navBtn}`}
               type="submit"
             >
               {t.navbar.contactUs}
