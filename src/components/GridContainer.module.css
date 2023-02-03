@@ -1,0 +1,34 @@
+.GridContainer {
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.GridContainer > article {
+  grid-area: article;
+}
+
+.GridContainer > img {
+  grid-area: image;
+  height: 550px;
+  width: 550px;
+  object-fit: cover;
+  margin-top: 2rem;
+  margin-inline: auto;
+  border-radius: 3px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 58em) {
+  .GridContainer {
+    display: grid;
+    place-items: center;
+    column-gap: 4rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "article image";
+  }
+  .GridContainer > img {
+    min-height: 100%;
+    min-width: 100%;
+    margin-top: 0;
+  }
+}

@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import AppContext from "@/context/AppContext";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import en from "../../public/locale/en";
@@ -5,6 +7,8 @@ import es from "../../public/locale/es";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
+  const { mainRef } = useContext(AppContext);
+  
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : es;
@@ -25,7 +29,6 @@ const Hero = () => {
         priority
       />
       <div
-        onClick={scrollToContent}
         className={`container ${styles.overlap}`}
       >
         <h1 className="ff-sans-title fs-800">
@@ -37,6 +40,8 @@ const Hero = () => {
           {t.hero.description}
         </p>
         <button
+          ref={mainRef}
+          onClick={scrollToContent}
           className={`btn btn-primary uppercase ff-sans-title ${styles.heroBtn}`}
           type="submit"
         >

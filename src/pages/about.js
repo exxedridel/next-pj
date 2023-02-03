@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Navbar from "@/components/Navbar";
 import { useRouter } from "next/router";
 import en from "../../public/locale/en";
 import es from "../../public/locale/es";
@@ -16,7 +15,7 @@ const About = () => {
         <meta name="description" content="Created by Setapps" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Navbar />
+
       <main className="container">
         <h1 className="fs-900">{t.about.title}</h1>
         <p>{t.about.description}</p>

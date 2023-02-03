@@ -1,3 +1,25 @@
+.SkipToContent {
+  position: absolute;
+  z-index: -1;
+  background: hsl(var(--whitesmoke));
+  color: hsl(var(--clr-dark));
+  text-decoration: underline;
+  padding: 0.5em 1em;
+  margin-inline: auto;
+  transform: translateY(-110%);
+  transition: transform 250ms ease-in;
+}
+
+.SkipToContent:focus {
+  z-index: 9999;
+  transform: translateY(0%);
+}
+
+.navCont {
+  margin-block: 4px;
+  background-color: whitesmoke;
+}
+
 .logo {
   display: inline-block;
   margin-right: 4px;
@@ -26,25 +48,11 @@ a.navLink,
   transition: all 0.3s ease;
 }
 .navBtn:hover {
-  background: #00BB2D;
-  border-color: #00BB2D;
+  background: #00bb2d;
+  border-color: #00bb2d;
 }
 @media (max-width: 992px) {
   .navBtn {
     width: 100%;
   }
 }
-
-.navCont {
-  margin-block: 4px;
-  background-color: whitesmoke;
-}
-/* .navCont {
-   margin-inline: auto;
-   max-width: 40rem;
- }
- @media (min-width: 992px) {
-  .navCont {
-    max-width: 71rem;
-  }
- } */

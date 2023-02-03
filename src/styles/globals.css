@@ -195,8 +195,8 @@ select {
   place-items: center;
 }
 
-.flow > *:where(:not(:first-child)) {
-  margin-top: 4rem;
+.flow > * {
+  padding-top: 6em;
 }
 .flow-normal > *:where(:not(:first-child)) {
   margin-top: 2.5rem;
