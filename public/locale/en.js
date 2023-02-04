@@ -21,7 +21,6 @@ export default {
   },
   home: {
     pageTitle: "Home",
-    description: "This is a example project using i18n",
   },
   about: {
     pageTitle: "About",

@@ -20,7 +20,6 @@ export default {
   },
   home: {
     pageTitle: "Inicio",
-    description: "Este es un ejemplo de proyecto usando i18n",
   },
   about: {
     pageTitle: "Acerca",

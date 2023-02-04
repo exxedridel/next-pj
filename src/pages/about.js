@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Setapps | {t.about.pageTitle}</title>
+        <title>{`Setapps | ${t.about.pageTitle}`}</title>
         <meta name="description" content="About Setapps Company" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

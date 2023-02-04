@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Setapps | {t.home.pageTitle}</title>
+        <title>{`Setapps | ${t.home.pageTitle}`}</title>
         <meta
           name="description"
-          content="Web App development and all related to make´em sustainable."
+          content="WebApp development and all related to make 'em sustainable."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
