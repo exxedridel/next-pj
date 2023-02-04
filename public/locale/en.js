@@ -20,10 +20,11 @@ export default {
     learnMore: "Learn more",
   },
   home: {
-    title: "Home",
+    pageTitle: "Home",
     description: "This is a example project using i18n",
   },
   about: {
+    pageTitle: "About",
     title: "About",
     description: "This is the information page.",
   },

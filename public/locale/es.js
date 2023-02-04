@@ -19,10 +19,11 @@ export default {
     learnMore: "Saber más",
   },
   home: {
-    title: "Inicio",
+    pageTitle: "Inicio",
     description: "Este es un ejemplo de proyecto usando i18n",
   },
   about: {
+    pageTitle: "Acerca",
     title: "Acerca",
     description: "Esta es la página de información.",
   },

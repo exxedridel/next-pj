@@ -1,25 +1,20 @@
+import { useContext } from "react";
+import AppContext from "@/context/AppContext";
 import Head from "next/head";
-// import Image from "next/image";
-// import Link from "next/link";
-// import { Inter } from "@next/font/google";
-import { useRouter } from "next/router";
-import en from "../../public/locale/en";
-import es from "../../public/locale/es";
 import Hero from "@/components/Hero";
 import GridContainer from "@/components/GridContainer";
-// import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Home.module.css";
 
+// import { Inter } from "@next/font/google";
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const router = useRouter();
-  const { locale } = router;
-  const t = locale === "en" ? en : es;
+  const { t } = useContext(AppContext);
 
   return (
     <>
       <Head>
-        <title>Setapps | Home</title>
+        <title>Setapps | {t.home.pageTitle}</title>
         <meta
           name="description"
           content="Web App development and all related to make´em sustainable."
@@ -29,13 +24,11 @@ export default function Home() {
 
       <Hero />
       <main id="main-content" className="container flow">
-        <div className="text-center flow-small">
-          <h1 className="ff-sans-title fs-700">Nuestros servicios</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident,
-            aperiam. Aliquid impedit amet fuga, tempore corporis magnam repellat
-            quisquam cumque ea harum maiores ratione debitis voluptatum
-            similique ex blanditiis nulla?
+        <div className={`${styles.header} text-center`}>
+          <h1 className="ff-sans-title fs-700">Our Services</h1>
+          <p className="fs-500">
+            We are a Software as a Service (SaaS) development company. With us, you leverage our
+            expertise to build world class products.
           </p>
         </div>
         <GridContainer />

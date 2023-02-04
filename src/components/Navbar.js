@@ -2,16 +2,11 @@ import { useContext } from "react";
 import AppContext from "@/context/AppContext";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import en from "../../public/locale/en";
-import es from "../../public/locale/es";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
+  const { t } = useContext(AppContext);
   const { mainFocus } = useContext(AppContext);
-  const router = useRouter();
-  const { locale } = router;
-  const t = locale === "en" ? en : es;
 
   return (
     <>

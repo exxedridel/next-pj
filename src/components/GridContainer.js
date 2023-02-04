@@ -1,8 +1,10 @@
-import React from "react";
+import { useContext } from "react";
+import AppContext from "@/context/AppContext";
 import Image from "next/image";
 import styles from "./GridContainer.module.css";
 
 const GridContainer = () => {
+  const { t } = useContext(AppContext);
   return (
   <div className={styles.GridContainer}>
       <article className="flow-small">

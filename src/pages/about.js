@@ -1,18 +1,16 @@
+import { useContext } from "react";
+import AppContext from "@/context/AppContext";
 import Head from "next/head";
-import { useRouter } from "next/router";
-import en from "../../public/locale/en";
-import es from "../../public/locale/es";
 import styles from "@/styles/About.module.css";
 
 const About = () => {
-  const router = useRouter();
-  const { locale } = router;
-  const t = locale === "en" ? en : es;
+  const { t } = useContext(AppContext);
+
   return (
     <>
       <Head>
-        <title>Setapps | About</title>
-        <meta name="description" content="Created by Setapps" />
+        <title>Setapps | {t.about.pageTitle}</title>
+        <meta name="description" content="About Setapps Company" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
