@@ -1,7 +1,6 @@
-
 const webappCalculator = () => {
   return (
-    <div className="container text-center">Web App Calculator</div>
+    <div className="container text-center flow">Web App Calculator</div>
   )
 }
 

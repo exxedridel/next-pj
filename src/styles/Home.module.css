@@ -2,12 +2,11 @@
   max-width: 70ch;
   margin: auto;
 }
-
 .header > h1 {
   margin-bottom: 0.6em;
   font-weight: 300;
 }
 .header > p {
-  color: hsl(var(--black) / 0.5);
+  color: hsl(var(--black) / 0.7);
   font-weight: 500;
 }
