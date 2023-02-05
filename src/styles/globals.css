@@ -20,11 +20,11 @@
   --fs-900: clamp(2.25rem, 4.5vw + 1rem, 6.5rem);
   --fs-800: clamp(2rem, 3vw + 1rem, 5.5rem);
   --fs-700: calc(1.6rem + 2vmin); /*1.75rem;*/
-  --fs-600: 1.5rem;
+  --fs-600: clamp(1.425rem, 3.5vmin, 2rem); /*1.5em;*/
   --fs-500: clamp(1.085rem, 2.5vmin, 1.1875rem); /*1.25rem; */
   --fs-400: 1rem;
-  --fs-300: 0.9375rem;
-  --fs-200: 0.875rem;
+  --fs-300: clamp(0.9rem, 1.75vmin, 0.975rem); /*0.9375rem;*/
+  --fs-200: clamp(0.8rem, 1.5vmin, 0.875rem); /*0.875rem;*/
   --fs-100: 0.75rem;
 }
 
@@ -200,7 +200,7 @@ select {
 }
 
 .flow > * {
-  padding-top: 6em;
+  padding-top: clamp(4.25rem, 5.5vw + 1rem, 6.5rem);
 }
 .flow-normal > *:where(:not(:first-child)) {
   margin-top: 2.5rem;

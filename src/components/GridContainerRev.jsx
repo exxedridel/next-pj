@@ -1,16 +1,16 @@
 import { useContext } from "react";
 import AppContext from "@/context/AppContext";
 import Image from "next/image";
-import styles from "./GridContainer.module.css";
+import styles from "./GridContainerRev.module.css";
 
-const GridContainer = () => {
+const GridContainerRev = () => {
   const { t } = useContext(AppContext);
   return (
     <article className={styles.GridContainer}>
       <div className={styles.divImg}>
         <Image
           className={styles.webDevImg}
-          src="/webapp-development.png"
+          src="/agile-teams.svg"
           alt="Webapp developing"
           width={540}
           height={360}
@@ -18,20 +18,20 @@ const GridContainer = () => {
         />
       </div>
       <div className={styles.information}>
-        <h2>WebApp Development</h2>
+        <h2>Web SEO Branding</h2>
         <div className={styles.articleEl}>
-          <h3>Expertise</h3>
+          <h3>Full range of skillsets</h3>
           <p>
-            We understand the nuances of building successful SaaS web stack such
-            as multi - tenancy, feature flags, i18n / l10n, role - based access,
-            security compliance, and more.
+            Building a successful product requires a range of skillsets and
+            specializations. Our Agile Pod Teams are the simplest way to
+            bootstrap, scale and sustain any Web App / SaaS development needs.
           </p>
         </div>
         <div className={styles.articleEl}>
-          <h3>Approach</h3>
+          <h3>Mature processes</h3>
           <p>
-            We focus on establishing an effective team and processes to develop
-            a sustainable product.
+            You leverage not only our mature processes but decades of experience
+            building such products at scale.
           </p>
         </div>
       </div>
@@ -39,4 +39,4 @@ const GridContainer = () => {
   );
 };
 
-export default GridContainer;
+export default GridContainerRev;

@@ -3,6 +3,7 @@ import AppContext from "@/context/AppContext";
 import Head from "next/head";
 import Hero from "@/components/Hero";
 import GridContainer from "@/components/GridContainer";
+import GridContainerRev from "@/components/GridContainerRev";
 import styles from "@/styles/Home.module.css";
 
 // import { Inter } from "@next/font/google";
@@ -32,6 +33,7 @@ export default function Home() {
           </p>
         </div>
         <GridContainer />
+        <GridContainerRev />
         <footer className="container text-center">
           © Copyright Setapps™ 2023. Todos los derechos reservados.
         </footer>

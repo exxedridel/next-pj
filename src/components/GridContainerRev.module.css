@@ -42,8 +42,8 @@
   .GridContainer {
     display: grid;
     column-gap: clamp(3rem, 3vw + 2rem, 5rem);
-    grid-template-columns: 45% minmax(0, 1fr);
-    grid-template-areas: "article image";
+    grid-template-columns: minmax(0, 1fr) 45%;
+    grid-template-areas: "image article";
   }
   .information {
     height: 355px;
