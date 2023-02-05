@@ -1,6 +1,5 @@
 .GridContainer {
   line-height: 1.7;
-  min-height: content;
 }
 .information {
   grid-area: article;
@@ -33,6 +32,7 @@
 }
 
 .webDevImg {
+  height: 200px;
   object-fit: contain;
   border-radius: 5px;
   margin-bottom: 3.5em;
@@ -44,6 +44,7 @@
     column-gap: clamp(3rem, 3vw + 2rem, 5rem);
     grid-template-columns: minmax(0, 1fr) 45%;
     grid-template-areas: "image article";
+    min-height: content;
   }
   .information {
     height: 355px;
