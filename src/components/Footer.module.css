@@ -1,3 +1,7 @@
 .footer {
-  padding-top: clamp(4.25rem, 5.5vw + 1rem, 6.5rem);
+  margin-top: clamp(4.25rem, 5.5vw + 1rem, 6.5rem);
+  padding-block: 3rem;
+  background-color: hsl(var(--black) /0.8);
+  color: hsl(var(--whitesmoke));
+  
 }

@@ -1,0 +1,13 @@
+.main {
+
+}
+
+.title {
+   font-weight: 300;
+}
+
+.feature {
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid hsl(var(--black) /0.3);
+}

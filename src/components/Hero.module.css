@@ -98,8 +98,8 @@
   margin-top: 1rem;
   width: 9rem;
   padding-block: 10px;
-  background: #2374ab;
-  border-color: #2374ab;
+  background: hsl(var(--pale-blue));
+  border-color: hsl(var(--pale-blue));
   font-size: 14px;
   font-weight: 600;
 }

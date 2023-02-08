@@ -43,13 +43,13 @@ a.navLink,
 .navBtn {
   width: auto;
   padding: 10px 24px;
-  background: #2374ab;
-  border-color: #2374ab;
+  background: hsl(var(--pale-blue));
+  border-color: hsl(var(--pale-blue));
   transition: all 0.3s ease;
 }
 .navBtn:hover {
-  background: #00bb2d;
-  border-color: #00bb2d;
+  background: #009423;
+  border-color: #009423;
 }
 @media (max-width: 992px) {
   .navBtn {

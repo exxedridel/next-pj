@@ -2,8 +2,8 @@ import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer className={`${styles.footer} container text-center`}>
-      © Copyright Setapps™ 2023. Todos los derechos reservados.
+    <footer className={`${styles.footer}`}>
+      <p className="container text-center fs-200">© Copyright Setapps™ 2023. Todos los derechos reservados.</p>
     </footer>
   );
 }
