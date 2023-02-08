@@ -14,9 +14,11 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main className="container">
-        <h1 className="fs-900">{t.about.title}</h1>
-        <p>{t.about.description}</p>
+      <main className={styles.main}>
+        <section className="container">
+          <h1 className="fs-800">{t.about.title}</h1>
+          <p>{t.about.description}</p>
+        </section>
       </main>
     </>
   );

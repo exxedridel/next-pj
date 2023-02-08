@@ -24,19 +24,17 @@ export default function Home() {
       </Head>
 
       <Hero />
+
       <main id="main-content" className="container flow">
-        <div className={`${styles.header} text-center`}>
+        <section className={`${styles.header} text-center`}>
           <h1 className="ff-sans-title fs-700">Our Services</h1>
           <p className="fs-500">
             We are a Software as a Service (SaaS) development company. With us, you leverage our
             expertise to build world class products.
           </p>
-        </div>
+        </section>
         <GridContainer />
         <GridContainerRev />
-        <footer className="container text-center">
-          © Copyright Setapps™ 2023. Todos los derechos reservados.
-        </footer>
       </main>
     </>
   );

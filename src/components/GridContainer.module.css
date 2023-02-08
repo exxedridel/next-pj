@@ -29,15 +29,21 @@
   display: flex;
   place-content: center;
   grid-area: image;
+  
 }
 
 .webDevImg {
-  height: 200px;
+  max-height: 250px;
   object-fit: contain;
   border-radius: 5px;
-  margin-bottom: 3.5em;
+  margin-bottom: 1.5em;
 }
 
+@media (min-width: 35em) {
+  .webDevImg {
+    max-height: 300px;
+  }
+}
 @media (min-width: 58em) {
   .GridContainer {
     display: grid;
@@ -56,5 +62,8 @@
 @media (min-width: 62em) {
   .information {
     justify-content: space-around;
+  }
+  .webDevImg {
+    max-height: 100%;
   }
 }

@@ -7,6 +7,6 @@
   font-weight: 300;
 }
 .header > p {
-  color: hsl(var(--black) / 0.5);
+  color: hsl(var(--black) / 0.6);
   font-weight: 500;
 }

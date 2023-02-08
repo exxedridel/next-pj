@@ -2,6 +2,7 @@ import Head from "next/head";
 import AppContext from "@/context/AppContext";
 import useAppState from "@/hooks/useAppState";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Script from "next/script";
 import "@/styles/globals.css";
 
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }) {
       <AppContext.Provider value={appState}>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </AppContext.Provider>
 
       <Script
