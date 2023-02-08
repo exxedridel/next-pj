@@ -1,8 +1,44 @@
+/*Mobile*/
 .main {
-  min-height: 78vh;
+  min-height: 40vh;
 }
 
 .title > h1 {
    margin-bottom: 6px;
-   
+
+}
+.appDevImg {
+   max-width: 100%;
+   max-height: 400px;
+   object-fit: contain;
+}
+/*Landscape & Tablet*/
+@media (min-width: 45em) {
+   .main {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      min-height: 45vh;
+   }
+   .title {
+      
+   }
+   .appDevImg {
+      max-width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+   }
+}
+/*Desktop*/
+@media (min-width: 75em) {
+   .main {
+      min-height: 60vh;
+   }
+   .title {
+      max-width: 685px;
+   }
+   .appDevImg {
+      max-height: 100%;
+   }
 }
