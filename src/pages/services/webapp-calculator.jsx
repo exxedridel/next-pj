@@ -14,6 +14,7 @@ const WebappCalculator = () => {
           alt="App development"
           width={512}
           height={512}
+          priority
         />
       <section className={styles.title}>
         <h1 className="ff-sans-title fs-800">Web App Calculator</h1>
