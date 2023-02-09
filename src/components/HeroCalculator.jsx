@@ -2,6 +2,10 @@ import Image from "next/image";
 import styles from "./HeroCalculator.module.css";
 
 const HeroCalculator = () => {
+  function scrollToContent() {
+    const element = document.getElementById("main-content");
+    element.scrollIntoView();
+  }
   return (
     <section className={`${styles.hero} container`}>
       <Image
@@ -18,7 +22,12 @@ const HeroCalculator = () => {
           With this Setapps&lsquo; tool you can quote how much your desired web
           app it&apos;s going to be.
         </p>
-        <button className={`btn btn-primary uppercase ff-sans-title ${styles.heroBtn}`}>Lets start</button>
+        <button
+          onClick={scrollToContent}
+          className={`${styles.heroBtn} btn btn-primary uppercase ff-sans-title`}
+        >
+          Lets start
+        </button>
       </div>
     </section>
   );

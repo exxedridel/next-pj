@@ -15,49 +15,99 @@ const WebappCalculator = () => {
       </Head>
 
       <HeroCalculator />
-      <hr className="container" />
-      <main className={`${styles.main} container flow`}>
-        <div className="flow-small">
+      <hr className={`${styles.hr} container`} />
+      <main id="main-content" className={`${styles.main} container flow`}>
+        <section className="flow-normal">
           <h2 className={`${styles.title} ff-sans-title fs-600`}>
             Select the features your web app needs:
           </h2>
-          <div className={styles.feature}>
-            <ul>
-              <li className="fs-300">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Facere, optio!
-                <br />
-                <select name="" id="">
-                  <option value="red">Red</option>
-                  <option value="orange">Orange</option>
-                  <option value="yellow">Yellow</option>
-                  <option value="green">Green</option>
-                  <option value="blue">Blue</option>
-                  <option value="indigo">Indigo Plateu Azcapotzalco</option>
-                  <option value="violet">Violet</option>
-                </select>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.feature}>
-            <ul>
-              <li className="fs-300">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Facere, optio!
-                <br />
-                <select name="" id="">
-                  <option value="red">Red</option>
-                  <option value="orange">Orange</option>
-                  <option value="yellow">Yellow</option>
-                  <option value="green">Green</option>
-                  <option value="blue">Blue</option>
-                  <option value="indigo">Indigo Plateu Azcapotzalco</option>
-                  <option value="violet">Violet</option>
-                </select>
-              </li>
-            </ul>
-          </div>
-        </div>
+          <ul className={`${styles.features} flow-normal`}>
+            <li className={`${styles.feature} fs-300`}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+              optio!
+              <br />
+              <select name="" id="">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo Plateu Azcapotzalco</option>
+                <option value="violet">Violet</option>
+              </select>
+            </li>
+            <li className={`${styles.feature} fs-300`}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+              optio!
+              <br />
+              <select name="" id="">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo Plateu Azcapotzalco</option>
+                <option value="violet">Violet</option>
+              </select>
+            </li>
+            <li className={`${styles.feature} fs-300`}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+              optio!
+              <br />
+              <select name="" id="">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo Plateu Azcapotzalco</option>
+                <option value="violet">Violet</option>
+              </select>
+            </li>
+            <li className={`${styles.feature} fs-300`}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+              optio!
+              <br />
+              <select name="" id="">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo Plateu Azcapotzalco</option>
+                <option value="violet">Violet</option>
+              </select>
+            </li>
+            <li className={`${styles.feature} fs-300`}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+              optio!
+              <br />
+              <select name="" id="">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo Plateu Azcapotzalco</option>
+                <option value="violet">Violet</option>
+              </select>
+            </li>
+            <li className={`${styles.feature} fs-300`}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+              optio!
+              <br />
+              <select name="" id="">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo Plateu Azcapotzalco</option>
+                <option value="violet">Violet</option>
+              </select>
+            </li>
+          </ul>
+        </section>
       </main>
     </>
   );

@@ -1,13 +1,26 @@
-.main {
-
+.hr {
+  margin: clamp(4.25rem, 5.5vw + 1rem, 6.5rem) auto 0;
 }
 
+.main {
+}
 .title {
-   font-weight: 300;
+  font-weight: 300;
+}
+
+.features {
+   list-style: none;
+   padding: 0 0;
 }
 
 .feature {
-   padding: 10px;
-   border-radius: 5px;
-   border: 1px solid hsl(var(--black) /0.3);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+@media (min-width: 45em) {
+  .hr {
+    margin: 0 auto 0;
+  }
 }
