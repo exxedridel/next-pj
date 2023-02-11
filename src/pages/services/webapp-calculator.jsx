@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AppContext from "@/context/AppContext";
 import Head from "next/head";
 import HeroCalculator from "@/components/HeroCalculator";
@@ -7,15 +7,15 @@ import styles from "@/styles/Webapp-calculator.module.css";
 const WebappCalculator = () => {
   const { t } = useContext(AppContext);
   const [formData, setFormDData] = useState({
-    webType: "",
-    design: "",
-    logo: "",
-    navButtons: "",
-    animations: "",
-    languages: "",
-    modes: "",
-    domainHost: "",
-    analytics: "",
+    webType: "none",
+    design: "none",
+    logo: "none",
+    // navButtons: "none",
+    // animations: "none",
+    // languages: "none",
+    // modes: "none",
+    // domainHost: "none",
+    // analytics: "none",
   });
   const [quote, setQuote] = useState(0);
 
@@ -29,9 +29,34 @@ const WebappCalculator = () => {
     });
   }
 
+  const webTypeCost = {
+    "none": 0,
+    "landing-page": 100,
+    "static-website": 200,
+    "blog-like": 300,
+    "e-commerce": 400,
+  }
+  const designCost = {
+    "none": 0,
+    "designer-service": 50,
+    "from-sketch": 150,
+    "from-design": 250,
+  }
+  const logoCost = {
+    "none": 0,
+    "designer-service": 10,
+    "from-pnglogo": 20,
+    "from-svglogo": 30,
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
-
+    console.log(webTypeCost[formData.webType]);
+    console.log(designCost[formData.design]);
+    console.log(logoCost[formData.logo]);
+    const res = webTypeCost[formData.webType] + designCost[formData.design] + logoCost[formData.logo];
+    console.log(res);
+    setQuote(res);
     console.log(formData);
   }
 
@@ -80,9 +105,7 @@ const WebappCalculator = () => {
                   value={formData.design}
                 >
                   <option value="none"> - - - - - - - - </option>
-                  <option value="designer-service">
-                    Yes, need my own design
-                  </option>
+                  <option value="designer-service">Yes, need my own design</option>
                   <option value="from-sketch">No, Ive a sketch</option>
                   <option value="from-design">No, already got it</option>
                 </select>
@@ -106,123 +129,19 @@ const WebappCalculator = () => {
                   <option value="from-svglogo">No, Ive a svg logo</option>
                 </select>
               </li>
-              <li className={`${styles.feature} fs-300`}>
-                <label htmlFor="webType">
-                  What kind of Web App do you need?
-                </label>
-                <br />
-                <select
-                  id="webType"
-                  name="webType"
-                  onChange={handleChange}
-                  value={formData.webType}
-                >
-                  <option value="none"> - - - - - - - - </option>
-                  <option value="landing-page">Landing page</option>
-                  <option value="yellow">Static web site</option>
-                  <option value="green">Blog like</option>
-                  <option value="green">E-commerce</option>
-                </select>
-              </li>
-              <li className={`${styles.feature} fs-300`}>
-                <label htmlFor="webType">
-                  What kind of Web App do you need?
-                </label>
-                <br />
-                <select
-                  id="webType"
-                  name="webType"
-                  onChange={handleChange}
-                  value={formData.webType}
-                >
-                  <option value="none"> - - - - - - - - </option>
-                  <option value="landing-page">Landing page</option>
-                  <option value="yellow">Static web site</option>
-                  <option value="green">Blog like</option>
-                  <option value="green">E-commerce</option>
-                </select>
-              </li>
-              <li className={`${styles.feature} fs-300`}>
-                <label htmlFor="webType">
-                  What kind of Web App do you need?
-                </label>
-                <br />
-                <select
-                  id="webType"
-                  name="webType"
-                  onChange={handleChange}
-                  value={formData.webType}
-                >
-                  <option value="none"> - - - - - - - - </option>
-                  <option value="landing-page">Landing page</option>
-                  <option value="yellow">Static web site</option>
-                  <option value="green">Blog like</option>
-                  <option value="green">E-commerce</option>
-                </select>
-              </li>
-              <li className={`${styles.feature} fs-300`}>
-                <label htmlFor="webType">
-                  What kind of Web App do you need?
-                </label>
-                <br />
-                <select
-                  id="webType"
-                  name="webType"
-                  onChange={handleChange}
-                  value={formData.webType}
-                >
-                  <option value="none"> - - - - - - - - </option>
-                  <option value="landing-page">Landing page</option>
-                  <option value="yellow">Static web site</option>
-                  <option value="green">Blog like</option>
-                  <option value="green">E-commerce</option>
-                </select>
-              </li>
-              <li className={`${styles.feature} fs-300`}>
-                <label htmlFor="webType">
-                  What kind of Web App do you need?
-                </label>
-                <br />
-                <select
-                  id="webType"
-                  name="webType"
-                  onChange={handleChange}
-                  value={formData.webType}
-                >
-                  <option value="none"> - - - - - - - - </option>
-                  <option value="landing-page">Landing page</option>
-                  <option value="yellow">Static web site</option>
-                  <option value="green">Blog like</option>
-                  <option value="green">E-commerce</option>
-                </select>
-              </li>
-              <li className={`${styles.feature} fs-300`}>
-                <label htmlFor="webType">
-                  What kind of Web App do you need?
-                </label>
-                <br />
-                <select
-                  id="webType"
-                  name="webType"
-                  onChange={handleChange}
-                  value={formData.webType}
-                >
-                  <option value="none"> - - - - - - - - </option>
-                  <option value="landing-page">Landing page</option>
-                  <option value="yellow">Static web site</option>
-                  <option value="green">Blog like</option>
-                  <option value="green">E-commerce</option>
-                </select>
-              </li>
             </ol>
-            <div  className={styles.result}>
-              <h2 className="ff-sans-title fs-600">The approximate cost is:</h2>
-              <p className={`${styles.price} fs-800`}><span className="fs-500">$</span>{quote}<span className="fs-500">.00</span></p>
+            <div className={styles.result}>
               <button
                 className={`btn btn-primary uppercase ff-sans-title ${styles.submitBtn}`}
               >
-                Checkout
+                Quote
               </button>
+              <h2 className="ff-sans-title fs-600">The approximate cost is:</h2>
+              <p className={`${styles.price} fs-800`}>
+                <span className="fs-500">$</span>
+                {quote}
+                <span className="fs-500">.00</span>
+              </p>
             </div>
           </form>
         </section>
