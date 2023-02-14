@@ -49,14 +49,18 @@ const WebappCalculator = () => {
     "from-svglogo": 30,
   }
 
+  useEffect(() => {
+    const res = webTypeCost[formData.webType] + designCost[formData.design] + logoCost[formData.logo];
+    console.log(res);
+    setQuote(res);
+  }, [formData])
+
   function handleSubmit(event) {
     event.preventDefault();
     console.log(webTypeCost[formData.webType]);
     console.log(designCost[formData.design]);
     console.log(logoCost[formData.logo]);
-    const res = webTypeCost[formData.webType] + designCost[formData.design] + logoCost[formData.logo];
     console.log(res);
-    setQuote(res);
     console.log(formData);
   }
 
@@ -131,17 +135,17 @@ const WebappCalculator = () => {
               </li>
             </ol>
             <div className={styles.result}>
-              <button
-                className={`btn btn-primary uppercase ff-sans-title ${styles.submitBtn}`}
-              >
-                Quote
-              </button>
               <h2 className="ff-sans-title fs-600">The approximate cost is:</h2>
               <p className={`${styles.price} fs-800`}>
                 <span className="fs-500">$</span>
                 {quote}
                 <span className="fs-500">.00</span>
               </p>
+              <button type="submit"
+                className={`btn btn-primary uppercase ff-sans-title ${styles.submitBtn}`}
+              >
+                Send quote
+              </button>
             </div>
           </form>
         </section>
