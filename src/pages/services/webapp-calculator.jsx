@@ -7,6 +7,7 @@ import styles from "@/styles/Webapp-calculator.module.css";
 
 const WebappCalculator = () => {
   const { t } = useContext(AppContext);
+  const [quote, setQuote] = useState(0);
   const [formData, setFormData] = useState({
     webType: "none",
     design: "none",
@@ -20,17 +21,6 @@ const WebappCalculator = () => {
     result: 0,
     reply_to: "",
   });
-  const [quote, setQuote] = useState(0);
-
-  function handleChange(event) {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => {
-      return {
-        ...prevFormData,
-        [name]: value,
-      };
-    });
-  }
 
   const webTypeCost = {
     none: 0,
@@ -60,16 +50,27 @@ const WebappCalculator = () => {
     setQuote(res);
   }, [formData]);
 
-  function handleSubmit(event) {
-    event.preventDefault();
-
-    setFormData(prevFormData => {
+  useEffect(() => {
+    setFormData((prevFormData) => {
       return {
         ...prevFormData,
         result: res,
-      }
+      };
     });
+  }, [quote]);
 
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => {
+      return {
+        ...prevFormData,
+        [name]: value,
+      };
+    });
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
     send("service_wqoab4a", "template_s4wp7mu", formData, "BPmyVw0Oabp2X1Bjw")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
@@ -78,8 +79,12 @@ const WebappCalculator = () => {
         console.log("FAILED...", err);
       });
 
-    console.log("res:", res);
-    console.log("result", formData.result);
+    setFormData(prevForm=> {
+      return {
+        ...prevForm,
+        reply_to: "",
+      }
+    })
   }
 
   return (
