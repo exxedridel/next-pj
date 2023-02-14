@@ -44,6 +44,10 @@
 .price {
   display: flex;
   align-items: center;
+  font-size: calc(16px + 3vmin);
+}
+.price > span {
+  font-size: calc(16px + 1vmin);
 }
 
 .submitBtn {

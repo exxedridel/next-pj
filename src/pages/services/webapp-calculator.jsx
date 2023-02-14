@@ -1,12 +1,13 @@
 import { useContext, useEffect, useState } from "react";
 import AppContext from "@/context/AppContext";
+import { send } from "emailjs-com";
 import Head from "next/head";
 import HeroCalculator from "@/components/HeroCalculator";
 import styles from "@/styles/Webapp-calculator.module.css";
 
 const WebappCalculator = () => {
   const { t } = useContext(AppContext);
-  const [formData, setFormDData] = useState({
+  const [formData, setFormData] = useState({
     webType: "none",
     design: "none",
     logo: "none",
@@ -16,12 +17,14 @@ const WebappCalculator = () => {
     // modes: "none",
     // domainHost: "none",
     // analytics: "none",
+    result: 0,
+    reply_to: "",
   });
   const [quote, setQuote] = useState(0);
 
   function handleChange(event) {
     const { name, value } = event.target;
-    setFormDData((prevFormData) => {
+    setFormData((prevFormData) => {
       return {
         ...prevFormData,
         [name]: value,
@@ -30,38 +33,53 @@ const WebappCalculator = () => {
   }
 
   const webTypeCost = {
-    "none": 0,
+    none: 0,
     "landing-page": 100,
     "static-website": 200,
     "blog-like": 300,
     "e-commerce": 400,
-  }
+  };
   const designCost = {
-    "none": 0,
+    none: 0,
     "designer-service": 50,
     "from-sketch": 150,
     "from-design": 250,
-  }
+  };
   const logoCost = {
-    "none": 0,
+    none: 0,
     "designer-service": 10,
     "from-pnglogo": 20,
     "from-svglogo": 30,
-  }
+  };
+  const res =
+    webTypeCost[formData.webType] +
+    designCost[formData.design] +
+    logoCost[formData.logo];
 
   useEffect(() => {
-    const res = webTypeCost[formData.webType] + designCost[formData.design] + logoCost[formData.logo];
-    console.log(res);
     setQuote(res);
-  }, [formData])
+  }, [formData]);
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(webTypeCost[formData.webType]);
-    console.log(designCost[formData.design]);
-    console.log(logoCost[formData.logo]);
-    console.log(res);
-    console.log(formData);
+
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        result: res,
+      }
+    });
+
+    send("service_wqoab4a", "template_s4wp7mu", formData, "BPmyVw0Oabp2X1Bjw")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+
+    console.log("res:", res);
+    console.log("result", formData.result);
   }
 
   return (
@@ -109,7 +127,9 @@ const WebappCalculator = () => {
                   value={formData.design}
                 >
                   <option value="none"> - - - - - - - - </option>
-                  <option value="designer-service">Yes, need my own design</option>
+                  <option value="designer-service">
+                    Yes, need my own design
+                  </option>
                   <option value="from-sketch">No, Ive a sketch</option>
                   <option value="from-design">No, already got it</option>
                 </select>
@@ -136,12 +156,20 @@ const WebappCalculator = () => {
             </ol>
             <div className={styles.result}>
               <h2 className="ff-sans-title fs-600">The approximate cost is:</h2>
-              <p className={`${styles.price} fs-800`}>
+              <p className={`${styles.price}`}>
                 <span className="fs-500">$</span>
                 {quote}
                 <span className="fs-500">.00</span>
               </p>
-              <button type="submit"
+              <input
+                type="email"
+                placeholder="Email"
+                onChange={handleChange}
+                name="reply_to"
+                value={formData.reply_to}
+              />
+              <button
+                type="submit"
                 className={`btn btn-primary uppercase ff-sans-title ${styles.submitBtn}`}
               >
                 Send quote
