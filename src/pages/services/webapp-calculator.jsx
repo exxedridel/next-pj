@@ -73,10 +73,10 @@ const WebappCalculator = () => {
     event.preventDefault();
     send("service_wqoab4a", "template_s4wp7mu", formData, "BPmyVw0Oabp2X1Bjw")
       .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
+        alert(`SUCCESS! Check your email!`);
       })
       .catch((err) => {
-        console.log("FAILED...", err);
+        alert(`ERROR ${err.status}: ${err.text}`);
       });
 
     setFormData(prevForm=> {
