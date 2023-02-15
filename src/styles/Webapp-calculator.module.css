@@ -8,6 +8,10 @@
   font-weight: 300;
 }
 
+.disclaimer {
+  font-weight: 500;
+}
+
 .features {
   list-style: none;
   padding: 0 0;
@@ -16,10 +20,14 @@
 }
 
 .feature {
-  height: 5rem;
+  min-height: 5rem;
   padding: 10px;
+  font-size: var(--fs-300);
   border-radius: 5px;
   border: 1px solid grey;
+}
+.feature > label {
+  margin-bottom: 5px;
 }
 
 .result {

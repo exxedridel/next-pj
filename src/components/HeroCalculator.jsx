@@ -20,7 +20,7 @@ const HeroCalculator = () => {
         <h1 className="ff-sans-title fs-800">Web App Calculator</h1>
         <p className="fs-500">
           With this Setapps&lsquo; tool you can quote how much your desired web
-          app it&apos;s going to be.
+          app it&apos;s going to cost.
         </p>
         <button
           onClick={scrollToContent}

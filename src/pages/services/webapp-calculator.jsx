@@ -12,11 +12,10 @@ const WebappCalculator = () => {
     webType: "none",
     design: "none",
     logo: "none",
-    // navButtons: "none",
-    // animations: "none",
+    navButtons: "none",
+    animations: "none",
     // languages: "none",
     // modes: "none",
-    // domainHost: "none",
     // analytics: "none",
     result: 0,
     reply_to: "",
@@ -24,27 +23,41 @@ const WebappCalculator = () => {
 
   const webTypeCost = {
     none: 0,
-    "landing-page": 100,
-    "static-website": 200,
-    "blog-like": 300,
-    "e-commerce": 400,
+    "landing-page": 159,
+    "interactive-website": 349,
+    "blog-like": 539,
+    "e-commerce": 999,
   };
   const designCost = {
     none: 0,
-    "designer-service": 50,
-    "from-sketch": 150,
-    "from-design": 250,
+    "designer-service": 108,
+    "from-sketch": 81,
+    "from-design": 54,
   };
   const logoCost = {
     none: 0,
-    "designer-service": 10,
-    "from-pnglogo": 20,
-    "from-svglogo": 30,
+    "designer-service": 108,
+    "from-jpglogo": 54,
+    "from-pnglogo": 27,
+  };
+  const navBtnCost = {
+    none: 0,
+    "1-to-3": 40,
+    "4-to-6": 80,
+    "7-or-more": 120,
+  };
+  const animationsCost = {
+    none: 0,
+    "1-to-2": 19,
+    "3-to-4": 38,
+    "5-or-more": 57,
   };
   const res =
     webTypeCost[formData.webType] +
     designCost[formData.design] +
-    logoCost[formData.logo];
+    logoCost[formData.logo] +
+    navBtnCost[formData.navButtons] +
+    animationsCost[formData.animations];
 
   useEffect(() => {
     setQuote(res);
@@ -79,12 +92,12 @@ const WebappCalculator = () => {
         alert(`ERROR ${err.status}: ${err.text}`);
       });
 
-    setFormData(prevForm=> {
+    setFormData((prevForm) => {
       return {
         ...prevForm,
         reply_to: "",
-      }
-    })
+      };
+    });
   }
 
   return (
@@ -102,9 +115,13 @@ const WebappCalculator = () => {
           <h2 className={`${styles.title} ff-sans-title fs-600`}>
             Select the features your web app needs:
           </h2>
+          <p className={`${styles.disclaimer} fs-200`}>
+            If you are not sure about a category fell free to&nbsp;
+            <a href="https://wa.me/message/QNWKISFC6MBJI1">Contact us</a>*
+          </p>
           <form onSubmit={handleSubmit}>
-            <ol className={`${styles.features} `}>
-              <li className={`${styles.feature} fs-300`}>
+            <ol className={`${styles.features}`}>
+              <li className={`${styles.feature}`}>
                 <label htmlFor="webType">
                   What kind of Web App do you need?
                 </label>
@@ -115,14 +132,16 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.webType}
                 >
-                  <option value="none"> - - - - - - - - </option>
+                  <option value="none">None</option>
                   <option value="landing-page">Landing page</option>
-                  <option value="static-website">Static web site</option>
+                  <option value="interactive-website">
+                    Interactive web site
+                  </option>
                   <option value="blog-like">Blog like</option>
                   <option value="e-commerce">E-commerce</option>
                 </select>
               </li>
-              <li className={`${styles.feature} fs-300`}>
+              <li className={`${styles.feature}`}>
                 <label htmlFor="design">Do you need design services?</label>
                 <br />
                 <select
@@ -131,7 +150,7 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.design}
                 >
-                  <option value="none"> - - - - - - - - </option>
+                  <option value="none">None</option>
                   <option value="designer-service">
                     Yes, need my own design
                   </option>
@@ -139,7 +158,7 @@ const WebappCalculator = () => {
                   <option value="from-design">No, already got it</option>
                 </select>
               </li>
-              <li className={`${styles.feature} fs-300`}>
+              <li className={`${styles.feature}`}>
                 <label htmlFor="logo">
                   Do you need logo creation services?
                 </label>
@@ -150,12 +169,46 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.logo}
                 >
-                  <option value="none"> - - - - - - - - </option>
+                  <option value="none">None</option>
                   <option value="designer-service">
                     Yes, need my own logo
                   </option>
+                  <option value="from-jpglogo">No, Ive a jpg logo</option>
                   <option value="from-pnglogo">No, Ive a png logo</option>
-                  <option value="from-svglogo">No, Ive a svg logo</option>
+                </select>
+              </li>
+              <li className={`${styles.feature}`}>
+                <label htmlFor="navButtons">
+                  How many buttons your navigation bar will have?
+                </label>
+                <br />
+                <select
+                  id="navButtons"
+                  name="navButtons"
+                  onChange={handleChange}
+                  value={formData.navButtons}
+                >
+                  <option value="none">None</option>
+                  <option value="1-to-3">From 1 to 3</option>
+                  <option value="4-to-6">From 4 to 6</option>
+                  <option value="7-or-more">From 7 or more</option>
+                </select>
+              </li>
+              <li className={`${styles.feature}`}>
+                <label htmlFor="animations">
+                  How many animations its going to have?
+                </label>
+                <br />
+                <select
+                  id="animations"
+                  name="animations"
+                  onChange={handleChange}
+                  value={formData.animations}
+                >
+                  <option value="none">None</option>
+                  <option value="1-to-2">From 1 to 2</option>
+                  <option value="3-to-4">From 3 to 4</option>
+                  <option value="5-or-more">From 5 or more</option>
                 </select>
               </li>
             </ol>
