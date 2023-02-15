@@ -14,9 +14,9 @@ const WebappCalculator = () => {
     logo: "none",
     navButtons: "none",
     animations: "none",
-    // languages: "none",
-    // modes: "none",
-    // analytics: "none",
+    languages: "none",
+    themes: "none",
+    analytics: "none",
     result: 0,
     reply_to: "",
   });
@@ -52,12 +52,32 @@ const WebappCalculator = () => {
     "3-to-4": 38,
     "5-or-more": 57,
   };
+  const languagesCost = {
+    none: 0,
+    "1": 54,
+    "2": 108,
+    "3-or-more": 216,
+  };
+  const themesCost = {
+    none: 0,
+    "dark": 32,
+    "2-themes": 42,
+    "3-or-more": 52,
+  };
+  const analyticsCost = {
+    none: 0,
+    "google-analytics": 48,
+    "full-configuration": 96,
+  };
   const res =
     webTypeCost[formData.webType] +
     designCost[formData.design] +
     logoCost[formData.logo] +
     navBtnCost[formData.navButtons] +
-    animationsCost[formData.animations];
+    animationsCost[formData.animations] +
+    languagesCost[formData.languages] +
+    themesCost[formData.themes] +
+    analyticsCost[formData.analytics];
 
   useEffect(() => {
     setQuote(res);
@@ -179,7 +199,7 @@ const WebappCalculator = () => {
               </li>
               <li className={`${styles.feature}`}>
                 <label htmlFor="navButtons">
-                  How many buttons your navigation bar will have?
+                  How many buttons your navigation will have?
                 </label>
                 <br />
                 <select
@@ -196,7 +216,7 @@ const WebappCalculator = () => {
               </li>
               <li className={`${styles.feature}`}>
                 <label htmlFor="animations">
-                  How many animations its going to have?
+                  How many animations are required?
                 </label>
                 <br />
                 <select
@@ -209,6 +229,56 @@ const WebappCalculator = () => {
                   <option value="1-to-2">From 1 to 2</option>
                   <option value="3-to-4">From 3 to 4</option>
                   <option value="5-or-more">From 5 or more</option>
+                </select>
+              </li>
+              <li className={`${styles.feature}`}>
+                <label htmlFor="languages">
+                  Do you need translation to another languages?
+                </label>
+                <br />
+                <select
+                  id="languages"
+                  name="languages"
+                  onChange={handleChange}
+                  value={formData.languages}
+                >
+                  <option value="none">None</option>
+                  <option value="1">To spanish only</option>
+                  <option value="2">2 extra languages</option>
+                  <option value="3-or-more">3 or more languages</option>
+                </select>
+              </li>
+              <li className={`${styles.feature}`}>
+                <label htmlFor="themes">
+                  Do you want dark mode or extra themes?
+                </label>
+                <br />
+                <select
+                  id="themes"
+                  name="themes"
+                  onChange={handleChange}
+                  value={formData.themes}
+                >
+                  <option value="none">None</option>
+                  <option value="dark">Dark mode</option>
+                  <option value="2-themes">Dark and sepia mode</option>
+                  <option value="3-or-more">3 or more themes</option>
+                </select>
+              </li>
+              <li className={`${styles.feature}`}>
+                <label htmlFor="analytics">
+                  Which Google tools do you require?
+                </label>
+                <br />
+                <select
+                  id="analytics"
+                  name="analytics"
+                  onChange={handleChange}
+                  value={formData.analytics}
+                >
+                  <option value="none">None</option>
+                  <option value="google-analytics">Google Analytics</option>
+                  <option value="full-configuration">Analytics and Search Console</option>
                 </select>
               </li>
             </ol>
