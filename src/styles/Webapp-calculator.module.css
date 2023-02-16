@@ -10,6 +10,7 @@
 
 .disclaimer {
   font-weight: 500;
+  text-align: center;
 }
 
 .features {
@@ -22,12 +23,22 @@
 .feature {
   min-height: 5rem;
   padding: 10px;
-  font-size: var(--fs-300);
+  
   border-radius: 5px;
   border: 1px solid grey;
 }
 .feature > label {
+  font-size: var(--fs-300);
   margin-bottom: 5px;
+}
+.feature > select {
+  font-size: var(--fs-200);
+  color: hsl(var(--black));
+  background-color: hsl(var(--black) /0.05);
+  width: 14rem;
+  padding: 3px;
+  border: 1px solid hsl(var(--pale-blue));
+  border-radius: 15px;
 }
 
 .result {

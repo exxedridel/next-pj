@@ -60,7 +60,7 @@ const WebappCalculator = () => {
   };
   const themesCost = {
     none: 0,
-    "dark": 32,
+    dark: 32,
     "2-themes": 42,
     "3-or-more": 52,
   };
@@ -131,14 +131,10 @@ const WebappCalculator = () => {
       <HeroCalculator />
       <hr className={`${styles.hr} container`} />
       <main id="main-content" className={`${styles.main} container flow`}>
-        <section className="flow-normal">
+        <section id="webapp-calculator" className="flow-normal">
           <h2 className={`${styles.title} ff-sans-title fs-600`}>
             Select the features your web app needs:
           </h2>
-          <p className={`${styles.disclaimer} fs-200`}>
-            If you are not sure about a category fell free to&nbsp;
-            <a href="https://wa.me/message/QNWKISFC6MBJI1">Contact us</a>*
-          </p>
           <form onSubmit={handleSubmit}>
             <ol className={`${styles.features}`}>
               <li className={`${styles.feature}`}>
@@ -243,7 +239,7 @@ const WebappCalculator = () => {
                   value={formData.languages}
                 >
                   <option value="none">None</option>
-                  <option value="1">To spanish only</option>
+                  <option value="1">To spanish</option>
                   <option value="2">2 extra languages</option>
                   <option value="3-or-more">3 or more languages</option>
                 </select>
@@ -278,10 +274,18 @@ const WebappCalculator = () => {
                 >
                   <option value="none">None</option>
                   <option value="google-analytics">Google Analytics</option>
-                  <option value="full-configuration">Analytics and Search Console</option>
+                  <option value="full-configuration">
+                    Analytics and Search Console
+                  </option>
                 </select>
               </li>
             </ol>
+            <p className={`${styles.disclaimer} fs-200`}>
+              If you are not sure about a category, checkout our&nbsp;
+              <a href="#">products</a> for
+              more info or feel free to&nbsp;
+              <a href="https://wa.me/message/QNWKISFC6MBJI1">contact us</a>.
+            </p>
             <div className={styles.result}>
               <h2 className="ff-sans-title fs-600">The approximate cost is:</h2>
               <p className={`${styles.price}`}>
