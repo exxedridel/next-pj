@@ -59,7 +59,7 @@ const Navbar = () => {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link href="services/webapp-calculator" className="dropdown-item">
+                    <Link href="/services/webapp-calculator" className="dropdown-item">
                       {t.navbar.services1}
                     </Link>
                   </li>
