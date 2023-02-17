@@ -13,7 +13,7 @@ const Navbar = () => {
       <button onClick={mainFocus} className={styles.SkipToContent}>Skip to content</button>
       <nav className={`navbar navbar-expand-lg container ${styles.navCont}`}>
         <div className={`container-fluid`}>
-          <a className={`navbar-brand ${styles.navbarBrand}`} href="#">
+          <Link href="/" className={`navbar-brand ${styles.navbarBrand}`} >
             <Image
               src="/setapps-logo.svg"
               alt="Setapps Logo"
@@ -23,7 +23,7 @@ const Navbar = () => {
               priority
             />
             Set<b>apps</b>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -64,7 +64,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item disabled" href="#" aria-disabled="true">
                       {t.navbar.services2}
                     </a>
                   </li>
@@ -72,14 +72,14 @@ const Navbar = () => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item disabled" href="#" aria-disabled="true">
                       {t.navbar.services3}
                     </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link href="about" className={`nav-link ${styles.navLink}`}>
+                <Link href="/products" className={`nav-link ${styles.navLink}`}>
                   {t.navbar.products}
                 </Link>
               </li>
