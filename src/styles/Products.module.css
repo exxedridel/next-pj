@@ -6,8 +6,9 @@
 
 .products {
   /* --flow-space: 2rem; */
+  padding-top: 2rem;
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-template-areas:
     "title"
     "image"
@@ -22,26 +23,49 @@
 .products > img {
   grid-area: image;
   max-width: 100%;
+  object-fit: contain;
+  height: 300px;
+  width: 100%;
 }
 
-.products > .tabList {
+.tabList {
   grid-area: tabs;
   display: flex;
+  justify-content: space-evenly;
   gap: 1rem;
+  font-family: var(--ff-sans-title);
+  font-size: var(--fs-300);
+  font-weight: 500;
+}
+.tabList > * {
+  border: none;
+  background-color: transparent;
+  color: hsl(var(--pale-blue));
+  text-transform: uppercase;
+  padding: 0;
+  width: min-content;
 }
 
-.products > .destinationInfo {
+.destinationInfo {
   grid-area: content;
-  max-width: 50ch;
+  /* max-width: 50ch; */
+}
+.destinationInfo > h2 {
+  text-transform: uppercase;
+  font-family: var(--ff-sans-title);
+  letter-spacing: 2px;
+  font-size: calc(3rem + 5.5vmin);
+  width: min-content;
+  line-height: 0.9;
 }
 
 .destinationMeta {
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  align-items: center;
   border-top: 1px solid hsl(var(--whitesmoke) / 0.1);
   padding-top: 2.5rem;
-  margin-top: 2.5rem;
 }
 
 .destinationMeta p {
@@ -62,6 +86,13 @@
     width: 100%;
     object-fit: cover;
   }
+  .destinationInfo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   place-content: center;
+   text-align: center;
+  }
 
   .destinationMeta {
     flex-direction: row;
@@ -71,14 +102,18 @@
 
 @media (min-width: 55em) {
   .products {
-    justify-items: start;
-    align-content: start;
+    /* justify-items: start; */
+    /* align-content: start; */
+    padding-top: 0;
     grid-template-areas:
       " title title "
       " image tabs "
       " image content ";
   }
-
+  .destinationInfo > p {
+   max-width: 60ch;
+  }
+  
   .destinationMeta {
     gap: min(6vw, 6rem);
     justify-content: start;

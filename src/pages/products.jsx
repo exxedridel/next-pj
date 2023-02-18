@@ -17,46 +17,39 @@ const Products = () => {
       <main className={`${styles.main}`}>
         <section className={`${styles.products} container`}>
           <h1 className={`${styles.numberedTitle} ff-sans-title`}>
-            Select a product
+            Select one of our products:
           </h1>
           <Image
-            src="/devices-coffe2-setapps.jpg"
+            src="/landing-page.png"
             alt="Current project"
-            width={350}
-            height={350}
+            width={512}
+            height={512}
             priority
           />
 
           <div className={styles.tabList}>
-            <button className="uppercase ff-sans-title fs-100">
-              Landing Page
-            </button>
-            <button className="uppercase ff-sans-title fs-100">
-              Landing Page
-            </button>
-            <button className="uppercase ff-sans-title fs-100">
-              Landing Page
-            </button>
-            <button className="uppercase ff-sans-title fs-100">
-              Landing Page
-            </button>
+            <button>Landing page</button>
+            <button>Interactive web site</button>
+            <button>Blog like</button>
+            <button>Electronic commerce</button>
           </div>
 
           <article className={styles.destinationInfo}>
-            <h2 className="fs-800 uppercase ff-serif">Landing Page</h2>
-
+            <h2>Landing Page</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe
-              sequi eius nesciunt quam reprehenderit neque earum animi quas,
-              atque, veritatis ratione perferendis eum ut?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rem
+              facilis porro pariatur quidem possimus, at perspiciatis fuga
+              suscipit aut, modi veritatis hic. Velit necessitatibus quia,
+              officiis odio at ipsam autem accusantium, recusandae quibusdam
+              facilis labore magni magnam dignissimos molestiae adipisci nihil,
+              in libero doloribus. Voluptatum aperiam quaerat cum eaque.
             </p>
-
             <div className={styles.destinationMeta}>
               <div>
-                <button className="ff-serif uppercase">Link 1</button>
+                <button className="ff-sans-title uppercase">Example 1</button>
               </div>
               <div>
-                <button className="ff-serif uppercase">Link 2</button>
+                <button className="ff-sans-title uppercase">Example 2</button>
               </div>
             </div>
           </article>
