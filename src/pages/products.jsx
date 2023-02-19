@@ -20,7 +20,7 @@ const Products = () => {
             Select one of our products:
           </h1>
           <Image
-            src="/landing-page.png"
+            src="/landing-page1.png"
             alt="Current project"
             width={512}
             height={512}
@@ -38,11 +38,10 @@ const Products = () => {
             <h2>Landing Page</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rem
-              facilis porro pariatur quidem possimus, at perspiciatis fuga
-              suscipit aut, modi veritatis hic. Velit necessitatibus quia,
-              officiis odio at ipsam autem accusantium, recusandae quibusdam
-              facilis labore magni magnam dignissimos molestiae adipisci nihil,
-              in libero doloribus. Voluptatum aperiam quaerat cum eaque.
+              facilis porro pariatur quidem possimus, at analme perspiciatis fuga
+              suscipit aut, modi veritatis hic. Velit cuadros necessitatibus quia,
+              officiis odio at ipsam autemticacion de 1 accusantium, recusandae quibusdam
+              facilis labores.
             </p>
             <div className={styles.destinationMeta}>
               <div>
