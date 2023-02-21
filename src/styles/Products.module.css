@@ -86,6 +86,25 @@
 .destinationMeta h3 {
   max-width: 100%;
 }
+.button {
+  width: auto;
+  text-decoration: none;
+  font-family: var(--ff-sans-title);
+  font-size: var(--fs-200);
+  color: hsl(var(--whitesmoke));
+  font-weight: 600;
+  text-transform: uppercase;
+  background: hsl(var(--pale-blue));
+  border: 1px solid hsl(var(--pale-blue));
+  border-radius: 6px;
+  padding: 12px 28px;
+  transition: all 0.3s ease;
+}
+.button:hover,
+.button:focus {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+}
 
 @media (min-width: 35em) {
   .numberedTitle {
@@ -144,8 +163,8 @@
     width: 70%;
   }
   .tabList {
-   justify-content: start;
-   gap: 3.5rem;
+    justify-content: start;
+    gap: 3.5rem;
   }
   .destinationInfo > h2 {
     padding-top: 2rem;

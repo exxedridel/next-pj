@@ -48,7 +48,8 @@ a.navLink,
   border-color: hsl(var(--pale-blue));
   transition: all 0.3s ease;
 }
-.navBtn:hover {
+.navBtn:hover,
+.navBtn:focus {
   background: #009423;
   border-color: #009423;
 }

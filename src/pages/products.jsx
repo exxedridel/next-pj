@@ -1,11 +1,19 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import AppContext from "@/context/AppContext";
 import Head from "next/head";
 import Image from "next/image";
+import products from "@/data/productsData";
 import styles from "@/styles/Products.module.css";
 
 const Products = () => {
   const { t } = useContext(AppContext);
+  const [currentProduct, setCurrentProduct] = useState(0);
+
+  function handleClick(index) {
+    setCurrentProduct(index);
+    console.log(index);
+  }
+
   return (
     <>
       <Head>
@@ -28,28 +36,29 @@ const Products = () => {
           />
 
           <div className={styles.tabList}>
-            <button>Landing page</button>
-            <button>Interactive web site</button>
-            <button>Blog like</button>
-            <button>Electronic commerce</button>
+            {products.map((product) => (
+              <button
+                key={product.id}
+                id={product.id}
+                onClick={() => handleClick(product.id)}
+              >
+                {product.title}
+              </button>
+            ))}
           </div>
 
           <article className={styles.destinationInfo}>
-            <h2>Landing Page</h2>
+            <h2>{products[currentProduct].title}</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rem
-              facilis porro pariatur quidem possimus, at analme perspiciatis fuga
-              suscipit aut, modi veritatis hic. Velit cuadros necessitatibus quia,
-              officiis odio at ipsam autemticacion de 1 accusantium, recusandae quibusdam
-              facilis labores.
+              {products[currentProduct].description}
             </p>
             <div className={styles.destinationMeta}>
               <div>
-                <button className="ff-sans-title uppercase">Example 1</button>
+                <a href={products[currentProduct].link1} className={`${styles.button}`}>Example</a>
               </div>
-              <div>
-                <button className="ff-sans-title uppercase">Example 2</button>
-              </div>
+              {/* <div>
+                <button className={`${styles.button}`}>example b</button>
+              </div> */}
             </div>
           </article>
         </section>
