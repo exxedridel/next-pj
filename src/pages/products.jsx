@@ -24,11 +24,11 @@ const Products = () => {
 
       <main className={`${styles.main}`}>
         <section className={`${styles.products} container`}>
-          <h1 className={`${styles.numberedTitle} ff-sans-title`}>
+          <h1 className={`${styles.numberedTitle}`}>
             Select one of our products:
           </h1>
           <Image
-            src="/landing-page1.png"
+            src={products[currentProduct].image}
             alt="Current project"
             width={512}
             height={512}

@@ -18,6 +18,9 @@
 
 .numberedTitle {
   grid-area: title;
+  font-family: var(--ff-sans-title);
+  font-weight: 300;
+  text-align: center;
 }
 
 .products > img {
@@ -27,9 +30,6 @@
   max-width: 100%;
   object-fit: contain;
   height: 300px;
-}
-.products > h1 {
-  font-weight: 300;
 }
 
 .tabList {
@@ -61,10 +61,10 @@
 .destinationInfo > h2 {
   text-transform: uppercase;
   font-family: var(--ff-sans-title);
-  letter-spacing: 2px;
-  font-size: calc(3rem + 5.5vmin);
+  letter-spacing: 1px;
+  font-size: calc(2rem + 5vmin);
   width: min-content;
-  line-height: 0.9;
+  line-height: 1;
 }
 .destinationInfo > p {
   padding-top: 2rem;
@@ -108,12 +108,7 @@
 
 @media (min-width: 35em) {
   .numberedTitle {
-    justify-self: start;
     margin-top: 2rem;
-  }
-
-  .destinationInfo {
-    /* max-width: 50ch; */
   }
 
   .destinationMeta {
@@ -142,6 +137,9 @@
     align-items: start;
     text-align: start;
   }
+  .destinationInfo > h2 {
+    line-height: 0.9;
+  }
 
   .destinationMeta {
     gap: min(6vw, 6rem);
@@ -153,7 +151,6 @@
     gap: 0;
   }
   .products > h1 {
-    margin-inline: auto;
     margin-block: auto;
     padding-block: 5rem;
   }
