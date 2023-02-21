@@ -17,7 +17,7 @@ const HeroCalculator = () => {
         priority
       />
       <div className={styles.title}>
-        <h1 className="ff-sans-title fs-800">Web App Calculator</h1>
+        <h1>Setapps <br /> Calculator</h1>
         <p className="fs-500">
           With this Setapps&lsquo; tool you can quote how much your desired web
           app it&apos;s going to cost.
