@@ -52,7 +52,7 @@ const Products = () => {
             <p>{products[currentProduct].description}</p>
             <div className={styles.destinationMeta}>
               {products[currentProduct].links.map((link, index) => (
-                <a href={link} className={`${styles.button}`}>
+                <a key={index} href={link} className={`${styles.button}`}>
                   Example {index + 1}
                 </a>
               ))}
