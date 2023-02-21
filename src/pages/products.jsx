@@ -49,16 +49,13 @@ const Products = () => {
 
           <article className={styles.destinationInfo}>
             <h2>{products[currentProduct].title}</h2>
-            <p>
-              {products[currentProduct].description}
-            </p>
+            <p>{products[currentProduct].description}</p>
             <div className={styles.destinationMeta}>
-              <div>
-                <a href={products[currentProduct].link1} className={`${styles.button}`}>Example</a>
-              </div>
-              {/* <div>
-                <button className={`${styles.button}`}>example b</button>
-              </div> */}
+              {products[currentProduct].links.map((link, index) => (
+                <a href={link} className={`${styles.button}`}>
+                  Example {index + 1}
+                </a>
+              ))}
             </div>
           </article>
         </section>

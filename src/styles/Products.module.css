@@ -87,7 +87,7 @@
   max-width: 100%;
 }
 .button {
-  width: auto;
+  width: max-content;
   text-decoration: none;
   font-family: var(--ff-sans-title);
   font-size: var(--fs-200);
@@ -113,7 +113,7 @@
 
   .destinationMeta {
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: min(3.5vw, 3.075rem);
   }
 }
 
@@ -139,11 +139,6 @@
   }
   .destinationInfo > h2 {
     line-height: 0.9;
-  }
-
-  .destinationMeta {
-    gap: min(6vw, 6rem);
-    justify-content: start;
   }
 }
 @media (min-width: 62em) {

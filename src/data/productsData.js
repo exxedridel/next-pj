@@ -5,7 +5,7 @@ const data = [
     image: "/landing-page.png",
     description:
       "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
-    link1: "https://google.com",
+    links: ["https://google.com"],
     isCurrent: true,
   },
   {
@@ -14,7 +14,7 @@ const data = [
     image: "/interactive-website.png",
     description:
       "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
-    link1: "https://facebook.com",
+    links: ["https://google.com", "https://instagram.com"],
     isCurrent: true,
   },
   {
@@ -23,7 +23,7 @@ const data = [
     image: "/blog-like.png",
     description:
       "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
-    link1: "https://youtube.com",
+    links: ["https://google.com"],
     isCurrent: true,
   },
   {
@@ -32,7 +32,7 @@ const data = [
     image: "/e-commerce.png",
     description:
       "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
-    link1: "https://linkedin.com",
+    links: ["https://google.com", "https://instagram.com", "https://youtube.com"],
     isCurrent: true,
   },
 ];

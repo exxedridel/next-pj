@@ -54,8 +54,8 @@ const WebappCalculator = () => {
   };
   const languagesCost = {
     none: 0,
-    "1": 54,
-    "2": 108,
+    1: 54,
+    2: 108,
     "3-or-more": 216,
   };
   const themesCost = {
@@ -282,8 +282,7 @@ const WebappCalculator = () => {
             </ol>
             <p className={`${styles.disclaimer} fs-200`}>
               If you are not sure about a category, checkout our&nbsp;
-              <a href="#">products</a> for
-              more info or feel free to&nbsp;
+              <a href="#">products</a> for more info or feel free to&nbsp;
               <a href="https://wa.me/message/QNWKISFC6MBJI1">contact us</a>.
             </p>
             <div className={styles.result}>
