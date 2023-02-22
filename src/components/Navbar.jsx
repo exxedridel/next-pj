@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <>
       <button onClick={mainFocus} className={styles.SkipToContent}>Skip to content</button>
-      <nav className={`navbar navbar-expand-lg container ${styles.navCont}`}>
-        <div className={`container-fluid`}>
-          <Link href="/" className={`navbar-brand ${styles.navbarBrand}`} >
+      <nav className={`navbar navbar-expand-lg  ${styles.navCont}`}>
+        <div className={`container-fluid container`}>
+          <Link href="/" className={`navbar-brand ff-sans-title ${styles.navbarBrand}`} >
             <Image
               src="/setapps-logo.svg"
               alt="Setapps Logo"
