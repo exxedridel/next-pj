@@ -27,6 +27,10 @@ export default {
     title: "About",
     description: "This is the information page.",
   },
+  productsPage: {
+    title: "Select one of our products:",
+    example: "Example",
+  },
   products: [
     {
       id: 0,
