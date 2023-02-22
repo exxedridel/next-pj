@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import AppContext from "@/context/AppContext";
 import Head from "next/head";
 import Image from "next/image";
-import products from "@/data/productsData";
+
 import styles from "@/styles/Products.module.css";
 
 const Products = () => {
@@ -11,7 +11,6 @@ const Products = () => {
 
   function handleClick(index) {
     setCurrentProduct(index);
-    console.log(index);
   }
 
   return (
@@ -24,11 +23,9 @@ const Products = () => {
 
       <main className={`${styles.main}`}>
         <section className={`${styles.products} container`}>
-          <h1 className={`${styles.numberedTitle}`}>
-            Select one of our products:
-          </h1>
+          <h1 className={`${styles.title}`}>{t.productsPage.title}</h1>
           <Image
-            src={products[currentProduct].image}
+            src={t.products[currentProduct].image}
             alt="Current project"
             width={512}
             height={512}
@@ -36,7 +33,7 @@ const Products = () => {
           />
 
           <div className={styles.tabList}>
-            {products.map((product) => (
+            {t.products.map((product) => (
               <button
                 key={product.id}
                 id={product.id}
@@ -48,12 +45,12 @@ const Products = () => {
           </div>
 
           <article className={styles.destinationInfo}>
-            <h2>{products[currentProduct].title}</h2>
-            <p>{products[currentProduct].description}</p>
+            <h2>{t.products[currentProduct].title}</h2>
+            <p>{t.products[currentProduct].description}</p>
             <div className={styles.destinationMeta}>
-              {products[currentProduct].links.map((link, index) => (
+              {t.products[currentProduct].links.map((link, index) => (
                 <a key={index} href={link} className={`${styles.button}`}>
-                  Example {index + 1}
+                  {t.productsPage.example} {index + 1}
                 </a>
               ))}
             </div>

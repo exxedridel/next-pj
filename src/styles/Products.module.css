@@ -16,7 +16,7 @@
     "content";
 }
 
-.numberedTitle {
+.title {
   grid-area: title;
   font-family: var(--ff-sans-title);
   font-weight: 300;
@@ -62,7 +62,7 @@
   text-transform: uppercase;
   font-family: var(--ff-sans-title);
   letter-spacing: 1px;
-  font-size: calc(2rem + 5vmin);
+  font-size: calc(2rem + 4.5vmin);
   width: min-content;
   line-height: 1;
 }
@@ -145,7 +145,7 @@
   .products {
     gap: 0;
   }
-  .products > h1 {
+  .title {
     margin-block: auto;
     padding-block: 5rem;
   }

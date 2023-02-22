@@ -15,7 +15,8 @@ export default {
     title2: "visión",
     title3: "una",
     title4: "realidad",
-    description: "Desarrollamos soluciones Web App y todo lo necesario para hacerlas sustentables. Con nosotros, te respaldan más de 10 años de éxito en desarrollo de software para hacer que tu visión cobre vida.",
+    description:
+      "Desarrollamos soluciones Web App y todo lo necesario para hacerlas sustentables. Con nosotros, te respaldan más de 10 años de éxito en desarrollo de software para hacer que tu visión cobre vida.",
     learnMore: "Saber más",
   },
   home: {
@@ -26,4 +27,50 @@ export default {
     title: "Acerca",
     description: "Esta es la página de información.",
   },
+  productsPage: {
+    title: "Selecciona uno de nuestros productos:",
+    example: "Ejemplo",
+  },
+  products: [
+    {
+      id: 0,
+      title: "Página de Contacto",
+      image: "/landing-page.png",
+      description:
+        "1Español ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
+      links: ["https://google.com"],
+      isCurrent: true,
+    },
+    {
+      id: 1,
+      title: "Sitio Web Interactivo",
+      image: "/interactive-website.png",
+      description:
+        "2Español ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
+      links: ["https://google.com", "https://instagram.com"],
+      isCurrent: true,
+    },
+    {
+      id: 2,
+      title: "Tipo Blog",
+      image: "/blog-like.png",
+      description:
+        "3Español ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
+      links: ["https://google.com"],
+      isCurrent: true,
+    },
+    {
+      id: 3,
+      title: "Comercio Virtual",
+      image: "/e-commerce.png",
+      description:
+        "4Español ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
+      links: [
+        "https://google.com",
+        "https://instagram.com",
+        "https://youtube.com",
+      ],
+      isCurrent: true,
+    },
+  ],
 };
