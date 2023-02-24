@@ -4,8 +4,8 @@
 
 :root {
   /* colors */
+  --brand-color: 147 55% 50%;
   --pale-blue: 204 66% 40%;
-  --pale-green: 167 37% 36%;
   --whitesmoke: 0 0% 96%;
   --black: 0 0% 0%;
 
@@ -73,7 +73,7 @@ p {
 img,
 picture {
   /* max-width: 100%; */
-  display: block;
+  /* display: block; */
 }
 
 /* make form elements easier to work with */

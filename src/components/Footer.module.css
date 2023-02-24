@@ -1,22 +1,30 @@
 .footer {
   margin-top: clamp(4.25rem, 5.5vw + 1rem, 6.5rem);
-  padding-block: 3.56rem;
+  padding-block: 3.12rem;
   background-color: hsl(var(--black) /0.85);
   color: hsl(var(--whitesmoke));
 }
 .footer div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
 }
+
 .footer p {
   font-family: var(--ff-sans-title);
   font-size: var(--fs-200);
 }
-.logo {
-  cursor: pointer;
+
+.brandLogo {
+  margin-inline: 8px;
 }
-@media (min-width: 75em) {
+@media (min-width: 35em) {
+  .footer {
+    padding-block: 3.56rem;
+  }
   .footer div {
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

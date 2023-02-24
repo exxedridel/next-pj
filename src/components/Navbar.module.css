@@ -50,8 +50,8 @@ a.navLink,
 }
 .navBtn:hover,
 .navBtn:focus {
-  background: #009423;
-  border-color: #009423;
+  background: hsl(var(--brand-color));
+  border-color: hsl(var(--brand-color));
 }
 @media (max-width: 992px) {
   .navBtn {

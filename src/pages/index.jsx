@@ -4,6 +4,7 @@ import Head from "next/head";
 import Hero from "@/components/Hero";
 import GridContainer from "@/components/GridContainer";
 import GridContainerRev from "@/components/GridContainerRev";
+import HomeCards from "@/components/HomeCards";
 import styles from "@/styles/Home.module.css";
 
 // import { Inter } from "@next/font/google";
@@ -27,14 +28,22 @@ export default function Home() {
 
       <main id="main-content" className="container flow">
         <section className={`${styles.header} text-center`}>
-          <h1 className="ff-sans-title fs-700">Our Services</h1>
+          <h1 className={styles.h1}>Our Services</h1>
           <p className="fs-500">
-            We are a Software as a Service (SaaS) development company. With us, you leverage our
-            expertise to build world class products.
+            We are a Software as a Service (SaaS) development company. With us,
+            you leverage our expertise to build world class products.
           </p>
         </section>
+
         <GridContainer />
+
         <GridContainerRev />
+
+        <h1 className={`${styles.h1} text-center`}>
+          Set<b>apps</b> Advantage
+        </h1>
+
+        <HomeCards />
       </main>
     </>
   );
