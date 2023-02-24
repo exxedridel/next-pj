@@ -2,6 +2,7 @@ import { useContext } from "react";
 import AppContext from "@/context/AppContext";
 import Head from "next/head";
 import AboutHeader from "@/components/AboutHeader";
+import ContactForm from "@/components/ContactForm";
 import styles from "@/styles/About.module.css";
 
 const About = () => {
@@ -18,15 +19,15 @@ const About = () => {
       <main className={styles.main}>
         <AboutHeader />
         <hr className={styles.hr} />
-        <div className={`${styles.mision} container`}>
-          <h2>Our Mision</h2>
+        <article className={`${styles.mision} container`}>
+          <h2>Our Mission</h2>
           <p>
             To simplify the process of making our customers product vision come
             to life. And to leverage our extensive experience to help expand
             that vision and deliver delight.
           </p>
-        </div>
-        <div className={`${styles.values} container`}>
+        </article>
+        <article className={`${styles.values} container`}>
           <h2>Our Values</h2>
           <div className={styles.elements}>
             <div className={styles.value}>
@@ -54,7 +55,8 @@ const About = () => {
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
             </div>
           </div>
-        </div>
+        </article>
+        <ContactForm/>
       </main>
     </>
   );
