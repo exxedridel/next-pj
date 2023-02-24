@@ -4,9 +4,8 @@
 
 :root {
   /* colors */
-  /* --background-clr: 190 100% 11%;
-  --glow-clr: 50 100% 68%; */
   --pale-blue: 204 66% 40%;
+  --pale-green: 167 37% 36%;
   --whitesmoke: 0 0% 96%;
   --black: 0 0% 0%;
 
@@ -16,7 +15,6 @@
   --ff-sans-cursive: "Merriweather", serif;
 
   /* font-sizes */
-  
   --fs-900: clamp(2.25rem, 4.5vw + 1rem, 6.5rem);
   --fs-800: clamp(2rem, 3vw + 1rem, 5.5rem);
   --fs-700: calc(1.6rem + 2vmin); /*1.75rem;*/

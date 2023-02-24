@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { send } from "emailjs-com";
+import Image from "next/image";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {

@@ -1,5 +1,9 @@
 /*Mobile*/
 .hero {
+  background-color: rgb(255, 235, 244);
+  /* background-color: hsl(var(--black) / 0.033); */
+}
+.hero > div {
   min-height: 40vh;
 }
 .title {
@@ -9,7 +13,10 @@
   text-align: center;
   max-width: 43ch;
   margin-inline: auto;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+.logo {
+  display: inline;
 }
 .title h1 {
   font-family: var(--ff-sans-title);
@@ -18,6 +25,11 @@
   line-height: 1.1;
   /* text-transform: uppercase; */
   letter-spacing: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 }
 .title b {
   font-weight: 600;
@@ -26,12 +38,12 @@
   max-width: 100%;
   max-height: 400px;
   object-fit: contain;
-  margin: 1.5rem auto 0rem;
+  margin: 0rem auto;
 }
 
 /*Landscape & Tablet*/
 @media (min-width: 55em) {
-  .hero {
+  .hero > div {
     min-height: 50vh;
     display: flex;
     flex-direction: row;
@@ -44,7 +56,10 @@
     text-align: start;
     max-width: 60%;
     margin-inline: 0;
-    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .title h1 {
+    justify-content: start;
   }
   .appDevImg {
     max-width: 50%;
@@ -58,7 +73,7 @@
 
 /*Desktop*/
 @media (min-width: 75em) {
-  .hero {
+  .hero > div {
     min-height: 75vh;
     gap: min(4vw, 5rem);
   }

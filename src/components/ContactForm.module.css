@@ -1,5 +1,6 @@
 /* Mobile */
 .contact {
+  margin-top: 2rem;
   border: 1px solid grey;
   border-radius: 6px;
   padding-block: 2rem;
@@ -20,6 +21,10 @@
   font-size: var(--fs-300);
   font-weight: 600;
 }
+
+/* .logo {
+  display: none;
+} */
 
 .form {
   margin: 2rem auto 0;
@@ -80,6 +85,9 @@
 .button:focus {
   background-color: #0b5ed7;
   border-color: #0b5ed7;
+}
+
+@media (min-width: 35em) {
 }
 
 /*Landscape & Tablet*/

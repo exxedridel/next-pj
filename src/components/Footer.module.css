@@ -1,7 +1,22 @@
 .footer {
   margin-top: clamp(4.25rem, 5.5vw + 1rem, 6.5rem);
-  padding-block: 3rem;
-  background-color: hsl(var(--black) /0.8);
+  padding-block: 3.56rem;
+  background-color: hsl(var(--black) /0.85);
   color: hsl(var(--whitesmoke));
-  
+}
+.footer div {
+  display: flex;
+  justify-content: space-between;
+}
+.footer p {
+  font-family: var(--ff-sans-title);
+  font-size: var(--fs-200);
+}
+.logo {
+  cursor: pointer;
+}
+@media (min-width: 75em) {
+  .footer div {
+    justify-content: space-evenly;
+  }
 }
