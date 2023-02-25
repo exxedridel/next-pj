@@ -21,6 +21,11 @@ export default {
   },
   home: {
     pageTitle: "Inicio",
+    title1: "Nuestros Servicios",
+    p1: 'Somos una empresa de desarrollo de "software como servicio", lo que significa que podemos traducir ideas de negocios en una app sostenible y siempre disponible en la web.',
+    title2: "¿Por qué Setapps?",
+    title3: "¡Cotiza aquí tu web app!",
+    quoteBtn: "Cotizar",
   },
   about: {
     pageTitle: "Acerca",

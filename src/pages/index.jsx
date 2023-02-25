@@ -29,30 +29,22 @@ export default function Home() {
 
       <main id="main-content" className="container flow">
         <section className={`${styles.header} text-center`}>
-          <h1 className={styles.h1}>Our Services</h1>
-          <p className="fs-500">
-            We are a Software as a Service (SaaS) development company. With us,
-            you leverage our expertise to build world class products.
-          </p>
+          <h1 className={styles.h1}>{t.home.title1}</h1>
+          <p className="fs-500">{t.home.p1}</p>
         </section>
 
         <GridContainer />
 
         <GridContainerRev />
 
-        <h1 className={`${styles.h1} text-center`}>
-          Set<b>apps</b> Advantage
-        </h1>
+        <h1 className={`${styles.h1} text-center`}>{t.home.title2}</h1>
 
         <HomeCards />
         <section className={styles.nextTabNav}>
-          <h1 className={`${styles.h1} text-center`}>Quote your web app now!</h1>
-          <Link
-            className={styles.btnDiv}
-            href="/services/webapp-calculator"
-          >
+          <h1 className={`${styles.h1} text-center`}>{t.home.title3}</h1>
+          <Link className={styles.btnDiv} href="/services/webapp-calculator">
             <button className={`${styles.button}`} type="submit">
-              Quote
+              {t.home.quoteBtn}
             </button>
           </Link>
         </section>

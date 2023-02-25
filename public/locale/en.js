@@ -21,6 +21,11 @@ export default {
   },
   home: {
     pageTitle: "Home",
+    title1: "Our Services",
+    p1: 'We are a "software as a service" development company, which means, we can translate business ideas into a sustainable app always available on the web',
+    title2: "Setapps Advantage",
+    title3: "Quote your web app now!",
+    quoteBtn: "Quote"
   },
   about: {
     pageTitle: "About",
