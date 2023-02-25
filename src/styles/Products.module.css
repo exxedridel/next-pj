@@ -97,7 +97,7 @@
   background: hsl(var(--pale-blue));
   border: 1px solid hsl(var(--pale-blue));
   border-radius: 6px;
-  padding: 12px 28px;
+  padding: 9px 26px;
   transition: all 0.3s ease;
 }
 .button:hover,

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import AppContext from "@/context/AppContext";
+import Link from "next/link";
 import Head from "next/head";
 import Hero from "@/components/Hero";
 import GridContainer from "@/components/GridContainer";
@@ -44,6 +45,17 @@ export default function Home() {
         </h1>
 
         <HomeCards />
+        <section className={styles.nextTabNav}>
+          <h1 className={`${styles.h1} text-center`}>Quote your web app now!</h1>
+          <Link
+            className={styles.btnDiv}
+            href="/services/webapp-calculator"
+          >
+            <button className={`${styles.button}`} type="submit">
+              Quote
+            </button>
+          </Link>
+        </section>
       </main>
     </>
   );

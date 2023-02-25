@@ -1,14 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { send } from "emailjs-com";
 import Image from "next/image";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
+  const [departmentRoute, setDepartmentRoute] = useState("");
   const [formContact, setFormContact] = useState({
     fromEmail: "",
-    department: "careers",
+    department: "",
     message: "",
+    replyTo: "",
   });
+
+  const departmentEmail = {
+    careers: "hevedrios@gmail.com",
+    partnership: "exxed.ridel@gmail.com",
+    support: "hord.27591@gmail.com",
+  };
+
+  useEffect(() => {
+    setDepartmentRoute(departmentEmail[formContact.department]);
+  }, [formContact]);
+
+  useEffect(() => {
+    setFormContact((prevForm) => {
+      return {
+        ...prevForm,
+        replyTo: departmentRoute,
+      };
+    });
+  }, [departmentRoute]);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -34,12 +55,14 @@ const ContactForm = () => {
       .catch((err) => {
         alert(`ERROR ${err.status}: ${err.text}`);
       });
-    setFormContact((prevForm) => {
-      return {
-        fromEmail: "",
-        department: "careers",
-        message: "",
-      };
+
+    console.log(formContact);
+
+    setFormContact({
+      fromEmail: "",
+      department: "",
+      message: "",
+      replyTo: "",
     });
   }
 

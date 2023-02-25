@@ -26,7 +26,7 @@
 }
 .heroBtn {
   width: 9rem;
-  padding-block: 10px;
+  padding-block: 9px 10px;
   background: hsl(var(--pale-blue));
   border-color: hsl(var(--pale-blue));
   font-size: 14px;

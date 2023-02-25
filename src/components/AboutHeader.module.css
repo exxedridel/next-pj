@@ -1,6 +1,6 @@
 /*Mobile*/
 .hero {
-  background-color: hsl(var(--black) / 0.033);
+  background-color: hsl(var(--brand-color) /0.4);
 }
 .hero > div {
   min-height: 40vh;

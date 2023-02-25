@@ -7,6 +7,9 @@
   font-size: var(--fs-700);
   font-weight: 300;
 }
+.h1 b {
+  font-weight: 600;
+}
 
 .header > h1 {
   margin-bottom: 0.6em;
@@ -15,4 +18,31 @@
   color: hsl(var(--black) / 0.6);
   font-weight: 500;
 }
+.nextTabNav h1 {
+  margin-bottom: 2rem;
+}
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
 
+.button {
+  width: max-content;
+  text-decoration: none;
+  font-family: var(--ff-sans-title);
+  font-size: var(--fs-200);
+  color: hsl(var(--whitesmoke));
+  font-weight: 600;
+  text-transform: uppercase;
+  background: hsl(var(--pale-blue));
+  border: 1px solid hsl(var(--pale-blue));
+  border-radius: 6px;
+  padding: 9px 28px;
+  transition: all 0.3s ease;
+}
+.button:hover,
+.button:focus {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
