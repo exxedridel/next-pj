@@ -53,7 +53,7 @@ export default {
       description:
         "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
       links: ["https://google.com", "https://instagram.com"],
-      isCurrent: true,
+      isCurrent: false,
     },
     {
       id: 2,
@@ -62,7 +62,7 @@ export default {
       description:
         "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
       links: ["https://google.com"],
-      isCurrent: true,
+      isCurrent: false,
     },
     {
       id: 3,
@@ -71,7 +71,7 @@ export default {
       description:
         "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
       links: ["https://google.com", "https://instagram.com", "https://youtube.com"],
-      isCurrent: true,
+      isCurrent: false,
     },
   ],
 };

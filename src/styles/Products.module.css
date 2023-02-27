@@ -48,6 +48,16 @@
   text-transform: uppercase;
   padding: 0;
   width: min-content;
+  border-bottom: 2px solid transparent;
+
+}
+.tabList > *:hover,
+.tabList > *:hover {
+  border-bottom: 2px solid hsl(var(--blue-selected));
+}
+.tabList > [aria-current="true"] {
+  color: hsl(var(--blue-selected));
+  border-bottom: 2px solid hsl(var(--blue-selected));
 }
 
 .destinationInfo {
@@ -102,8 +112,8 @@
 }
 .button:hover,
 .button:focus {
-  background-color: #0b5ed7;
-  border-color: #0b5ed7;
+  background-color: hsl(var(--blue-selected));
+  border-color: hsl(var(--blue-selected));
 }
 
 @media (min-width: 35em) {

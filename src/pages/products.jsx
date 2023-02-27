@@ -7,10 +7,13 @@ import styles from "@/styles/Products.module.css";
 
 const Products = () => {
   const { t } = useContext(AppContext);
+  const { setProductActive } = useContext(AppContext);
   const [currentProduct, setCurrentProduct] = useState(0);
 
   function handleClick(index) {
     setCurrentProduct(index);
+    document.querySelector('[aria-current="true"]').setAttribute("aria-current", false);
+    document.getElementById(index).setAttribute("aria-current", true);
   }
 
   return (
@@ -38,6 +41,7 @@ const Products = () => {
                 key={product.id}
                 id={product.id}
                 onClick={() => handleClick(product.id)}
+                aria-current={product.isCurrent}
               >
                 {product.title}
               </button>
