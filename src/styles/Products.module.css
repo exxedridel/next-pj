@@ -49,15 +49,15 @@
   padding: 0;
   width: min-content;
   border-bottom: 2px solid transparent;
-
+  transition: all 0.15s ease-in-out;
 }
 .tabList > *:hover,
 .tabList > *:hover {
-  border-bottom: 2px solid hsl(var(--blue-selected));
+  border-bottom: 2px solid hsl(var(--pale-blue));
 }
 .tabList > [aria-current="true"] {
-  color: hsl(var(--blue-selected));
-  border-bottom: 2px solid hsl(var(--blue-selected));
+  color: hsl(var(--blue-selected) /0.85);
+  border-bottom: 2px solid hsl(var(--blue-selected) /0.85);
 }
 
 .destinationInfo {

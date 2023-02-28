@@ -7,7 +7,7 @@ import styles from "@/styles/Products.module.css";
 
 const Products = () => {
   const { t } = useContext(AppContext);
-  const { setProductActive } = useContext(AppContext);
+  const { setProducstActive } = useContext(AppContext);
   const [currentProduct, setCurrentProduct] = useState(0);
 
   function handleClick(index) {

@@ -4,7 +4,7 @@ import en from "../../public/locale/en";
 import es from "../../public/locale/es";
 
 const useAppState = () => {
-  const [productActive, setProductActive] = useState("");
+  const [productsActive, setProductsActive] = useState("");
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : es;
@@ -16,8 +16,8 @@ const useAppState = () => {
   }
 
   return {
-    productActive,
-    setProductActive,
+    productsActive,
+    setProductsActive,
     t,
     mainRef,
     mainFocus,
