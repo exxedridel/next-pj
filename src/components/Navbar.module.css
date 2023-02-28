@@ -41,6 +41,12 @@ a.navLink,
   font-weight: 600;
 }
 
+.langFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navBtn {
   width: auto;
   padding: 9px 24px;

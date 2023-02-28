@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AppContext from "@/context/AppContext";
 import Head from "next/head";
 import Image from "next/image";
@@ -6,9 +6,16 @@ import Image from "next/image";
 import styles from "@/styles/Products.module.css";
 
 const Products = () => {
-  const { t } = useContext(AppContext);
-  const { setProducstActive } = useContext(AppContext);
+  const { t, setProductsActive} = useContext(AppContext);
   const [currentProduct, setCurrentProduct] = useState(0);
+
+  useEffect(() => {
+    setProductsActive("active");
+    return function () {
+      setProductsActive("");
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function handleClick(index) {
     setCurrentProduct(index);

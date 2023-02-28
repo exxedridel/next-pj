@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import AppContext from "@/context/AppContext";
 import Head from "next/head";
 import AboutHeader from "@/components/AboutHeader";
@@ -6,7 +6,15 @@ import ContactForm from "@/components/ContactForm";
 import styles from "@/styles/About.module.css";
 
 const About = () => {
-  const { t } = useContext(AppContext);
+  const { t, setAboutActive } = useContext(AppContext);
+
+  useEffect(() => {
+    setAboutActive("active");
+    return function () {
+      setAboutActive("");
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>

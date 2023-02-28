@@ -5,15 +5,21 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  const { t } = useContext(AppContext);
+  const { t, homeActive, servicesActive, productsActive, aboutActive } =
+    useContext(AppContext);
   const { mainFocus } = useContext(AppContext);
 
   return (
     <>
-      <button onClick={mainFocus} className={styles.SkipToContent}>Skip to content</button>
+      <button onClick={mainFocus} className={styles.SkipToContent}>
+        Skip to content
+      </button>
       <nav className={`navbar navbar-expand-lg  ${styles.navCont}`}>
         <div className={`container-fluid container`}>
-          <Link href="/" className={`navbar-brand ff-sans-title ${styles.navbarBrand}`} >
+          <Link
+            href="/"
+            className={`navbar-brand ff-sans-title ${styles.navbarBrand}`}
+          >
             <Image
               src="/setapps-logo.svg"
               alt="Setapps Logo"
@@ -40,7 +46,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   href="/"
-                  className={`nav-link active ${styles.navLink}`}
+                  className={`nav-link ${homeActive} ${styles.navLink}`}
                   aria-current="page"
                 >
                   {t.navbar.home}
@@ -48,7 +54,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${styles.navLink}`}
+                  className={`nav-link dropdown-toggle ${servicesActive} ${styles.navLink}`}
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -59,12 +65,19 @@ const Navbar = () => {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link href="/services/webapp-calculator" className="dropdown-item">
+                    <Link
+                      href="/services/webapp-calculator"
+                      className="dropdown-item"
+                    >
                       {t.navbar.services1}
                     </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item disabled" href="#" aria-disabled="true">
+                    <a
+                      className="dropdown-item disabled"
+                      href="#"
+                      aria-disabled="true"
+                    >
                       {t.navbar.services2}
                     </a>
                   </li>
@@ -72,19 +85,29 @@ const Navbar = () => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item disabled" href="#" aria-disabled="true">
+                    <a
+                      className="dropdown-item disabled"
+                      href="#"
+                      aria-disabled="true"
+                    >
                       {t.navbar.services3}
                     </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link href="/products" className={`nav-link ${styles.navLink}`}>
+                <Link
+                  href="/products"
+                  className={`nav-link ${productsActive} ${styles.navLink}`}
+                >
                   {t.navbar.products}
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/about" className={`nav-link ${styles.navLink}`}>
+                <Link
+                  href="/about"
+                  className={`nav-link ${aboutActive} ${styles.navLink}`}
+                >
                   {t.navbar.about}
                 </Link>
               </li>
@@ -99,20 +122,41 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  {t.navbar.language}
+                  {t.navbar.language}{" "}
+                  <Image
+                    src="/translate.png"
+                    alt="translate icon"
+                    width={32}
+                    height={32}
+                    priority
+                  />
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" href="/" locale="en">
-                      English
+                    <Link className={`${styles.langFlex} dropdown-item`} href="/" locale="en">
+                      English&nbsp;
+                      <Image
+                        src="/united-states.png"
+                        alt="usa icon"
+                        width={23}
+                        height={23}
+                        priority
+                      />
                     </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="/" locale="es">
-                      Español
+                    <Link className={`${styles.langFlex} dropdown-item`} href="/" locale="es">
+                      Español&nbsp;
+                      <Image
+                        src="/mexico.png"
+                        alt="mexico icon"
+                        width={25}
+                        height={25}
+                        priority
+                      />
                     </Link>
                   </li>
                 </ul>

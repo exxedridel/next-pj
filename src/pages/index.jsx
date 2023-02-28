@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import AppContext from "@/context/AppContext";
 import Link from "next/link";
 import Head from "next/head";
@@ -12,7 +12,15 @@ import styles from "@/styles/Home.module.css";
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const { t } = useContext(AppContext);
+  const { t, setHomeActive } = useContext(AppContext);
+
+  useEffect(() => {
+    setHomeActive("active");
+    return function () {
+      setHomeActive("");
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>

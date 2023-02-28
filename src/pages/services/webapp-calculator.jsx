@@ -6,7 +6,7 @@ import HeroCalculator from "@/components/HeroCalculator";
 import styles from "@/styles/Webapp-calculator.module.css";
 
 const WebappCalculator = () => {
-  const { t } = useContext(AppContext);
+  const { t, setServicesActive } = useContext(AppContext);
   const [quote, setQuote] = useState(0);
   const [formData, setFormData] = useState({
     webType: "none",
@@ -78,6 +78,14 @@ const WebappCalculator = () => {
     languagesCost[formData.languages] +
     themesCost[formData.themes] +
     analyticsCost[formData.analytics];
+
+  useEffect(() => {
+    setServicesActive("active");
+    return function () {
+      setServicesActive("");
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     setQuote(res);
