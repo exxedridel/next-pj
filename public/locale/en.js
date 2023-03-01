@@ -23,6 +23,20 @@ export default {
     pageTitle: "Home",
     title1: "Our Services",
     p1: 'We are a "software as a service" development company, which means, we can translate business ideas into a sustainable app always available on the web',
+    webappDev: {
+      title: "Web App Development",
+      subtitle1: "We understand the nuances of building successful Web App solutions such as multi-tenacy",
+      p1: "",
+      subtitle2: "",
+      p2: "",
+    },  
+    brandSEO: {
+      title: "",
+      subtitle1: "",
+      p1: "",
+      subtitle2: "",
+      p2: "",
+    },  
     title2: "Setapps Advantage",
     title3: "Quote your web app now!",
     quoteBtn: "Quote"

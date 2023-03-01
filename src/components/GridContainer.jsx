@@ -18,20 +18,17 @@ const GridContainer = () => {
         />
       </div>
       <div className={styles.information}>
-        <h2>WebApp Development</h2>
+        <h2>{t.home.webappDev.title}</h2>
         <div className={styles.articleEl}>
-          <h3>Expertise</h3>
+          <h3>{t.home.webappDev.subtitle1}</h3>
           <p>
-            We understand the nuances of building successful SaaS web stack such
-            as multi - tenancy, feature flags, i18n / l10n, role - based access,
-            security compliance, and more.
+            {t.home.webappDev.p1}
           </p>
         </div>
         <div className={styles.articleEl}>
-          <h3>Approach</h3>
+          <h3>{t.home.webappDev.subtitle2}</h3>
           <p>
-            We focus on establishing an effective team and processes to develop
-            a sustainable product.
+          {t.home.webappDev.p2}
           </p>
         </div>
       </div>

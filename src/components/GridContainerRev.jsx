@@ -18,20 +18,17 @@ const GridContainerRev = () => {
         />
       </div>
       <div className={styles.information}>
-        <h2>Web SEO Branding</h2>
+        <h2>{t.home.brandSEO.title}</h2>
         <div className={styles.articleEl}>
-          <h3>Full range of skillsets</h3>
+          <h3>{t.home.brandSEO.subtitle1}</h3>
           <p>
-            Building a successful product requires a range of skillsets and
-            specializations. Our Agile Pod Teams are the simplest way to
-            bootstrap, scale and sustain any Web App / SaaS development needs.
+          {t.home.brandSEO.p1}
           </p>
         </div>
         <div className={styles.articleEl}>
-          <h3>Mature processes</h3>
+          <h3>{t.home.brandSEO.subtitle2}</h3>
           <p>
-            You leverage not only our mature processes but decades of experience
-            building such products at scale.
+          {t.home.brandSEO.p2}
           </p>
         </div>
       </div>

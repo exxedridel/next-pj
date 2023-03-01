@@ -16,13 +16,27 @@ export default {
     title3: "una",
     title4: "realidad",
     description:
-      "Desarrollamos soluciones Web App y todo lo necesario para hacerlas sustentables. Con nosotros, te respaldan más de 10 años de éxito en desarrollo de software para hacer que tu visión cobre vida.",
+      "Desarrollamos soluciones Web App y todo lo necesario para hacerlas sustentables. Con nosotros, te respaldan más de 5 años de éxito en desarrollo de software para hacer que tu visión cobre vida.",
     learnMore: "Saber más",
   },
   home: {
     pageTitle: "Inicio",
     title1: "Nuestros Servicios",
     p1: 'Somos una empresa de desarrollo de "software como servicio", lo que significa que podemos traducir ideas de negocios en una app sostenible y siempre disponible en la web.',
+    webappDev: {
+      title: "Desarrollo Web App",
+      subtitle1: "Habilidad",
+      p1: "Entendemos los matices de construir soluciones Web App, ya sea desde una página web de contacto hasta estructuras de multi-usuario para tiendas virtuales.",
+      subtitle2: "Estrategia",
+      p2: "Nos enfocamos en asignar un equipo de trabajo efectivo y ágil que te acompañe desde la más mínima duda hasta la producción de tu proyecto.",
+    },  
+    brandSEO: {
+      title: "Gestión de marca",
+      subtitle1: "Procedimientos comprobados",
+      p1: "Usamos algorítmos que han tenído éxito en grandes empresas para crear y construir tu marca, tanto a nivel técnico como a nivel emocional para darle su propia personalidad.",
+      subtitle2: "Optimización en motores de búsqueda",
+      p2: "Tu Web App se registra en el índice de Google para que fácilmente te pueda encontrar tu público objetivo más allá de las redes sociales.",
+    },  
     title2: "¿Por qué Setapps?",
     title3: "¡Cotiza aquí tu web app!",
     quoteBtn: "Cotizar",
