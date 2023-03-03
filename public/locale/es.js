@@ -122,7 +122,7 @@ export default {
         contactLink: "contactarnos",
       },
       estCost: "El costo aproximado es:",
-      change: 19,
+      change: 18,
       currency: "mxn",
       quoteBtn: "Enviar cotización",
     },

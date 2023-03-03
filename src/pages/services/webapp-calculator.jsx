@@ -348,18 +348,24 @@ const WebappCalculator = () => {
             </ol>
             <p className={`${styles.disclaimer} fs-200`}>
               {t.services.calculator.disclaimer.part1}&nbsp;
-              <a href="#">{t.services.calculator.disclaimer.productsLink}</a>&nbsp;
+              <a href="#">{t.services.calculator.disclaimer.productsLink}</a>
+              &nbsp;
               {t.services.calculator.disclaimer.part2}&nbsp;
               <a href="https://wa.me/message/QNWKISFC6MBJI1">
                 {t.services.calculator.disclaimer.contactLink}
-              </a>.
+              </a>
+              .
             </p>
             <div className={styles.result}>
-              <h2 className="ff-sans-title fs-600">{t.services.calculator.estCost}</h2>
+              <h2 className="ff-sans-title fs-600">
+                {t.services.calculator.estCost}
+              </h2>
               <p className={`${styles.price}`}>
                 <span className="fs-500">$</span>
-                {quote * t.services.calculator.change}
-                <span className="fs-500">.00 {t.services.calculator.currency}</span>
+                {(quote * t.services.calculator.change).toLocaleString()}
+                <span className="fs-500">
+                  .00 {t.services.calculator.currency}
+                </span>
               </p>
               <input
                 type="email"
