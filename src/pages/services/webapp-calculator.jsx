@@ -156,17 +156,27 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.webType}
                 >
-                  <option value="none">{t.services.calculator.feature1.option1}</option>
-                  <option value="landing-page">{t.services.calculator.feature1.option2}</option>
-                  <option value="interactive-website">
-                  {t.services.calculator.feature1.option3}
+                  <option value="none">
+                    {t.services.calculator.feature1.option1}
                   </option>
-                  <option value="blog-like">{t.services.calculator.feature1.option4}</option>
-                  <option value="e-commerce">{t.services.calculator.feature1.option5}</option>
+                  <option value="landing-page">
+                    {t.services.calculator.feature1.option2}
+                  </option>
+                  <option value="interactive-website">
+                    {t.services.calculator.feature1.option3}
+                  </option>
+                  <option value="blog-like">
+                    {t.services.calculator.feature1.option4}
+                  </option>
+                  <option value="e-commerce">
+                    {t.services.calculator.feature1.option5}
+                  </option>
                 </select>
               </li>
               <li className={`${styles.feature}`}>
-                <label htmlFor="design">{t.services.calculator.feature2.description}</label>
+                <label htmlFor="design">
+                  {t.services.calculator.feature2.description}
+                </label>
                 <br />
                 <select
                   id="design"
@@ -174,17 +184,23 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.design}
                 >
-                  <option value="none">{t.services.calculator.feature2.option1}</option>
-                  <option value="designer-service">
-                  {t.services.calculator.feature2.option2}
+                  <option value="none">
+                    {t.services.calculator.feature2.option1}
                   </option>
-                  <option value="from-sketch">{t.services.calculator.feature2.option3}</option>
-                  <option value="from-design">{t.services.calculator.feature2.option4}</option>
+                  <option value="designer-service">
+                    {t.services.calculator.feature2.option2}
+                  </option>
+                  <option value="from-sketch">
+                    {t.services.calculator.feature2.option3}
+                  </option>
+                  <option value="from-design">
+                    {t.services.calculator.feature2.option4}
+                  </option>
                 </select>
               </li>
               <li className={`${styles.feature}`}>
                 <label htmlFor="logo">
-                  Do you need logo creation services?
+                  {t.services.calculator.feature3.description}
                 </label>
                 <br />
                 <select
@@ -193,17 +209,23 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.logo}
                 >
-                  <option value="none">None</option>
-                  <option value="designer-service">
-                    Yes, need my own logo
+                  <option value="none">
+                    {t.services.calculator.feature3.option1}
                   </option>
-                  <option value="from-jpglogo">No, Ive a jpg logo</option>
-                  <option value="from-pnglogo">No, Ive a png logo</option>
+                  <option value="designer-service">
+                    {t.services.calculator.feature3.option2}
+                  </option>
+                  <option value="from-jpglogo">
+                    {t.services.calculator.feature3.option3}
+                  </option>
+                  <option value="from-pnglogo">
+                    {t.services.calculator.feature3.option4}
+                  </option>
                 </select>
               </li>
               <li className={`${styles.feature}`}>
                 <label htmlFor="navButtons">
-                  How many buttons your navigation will have?
+                  {t.services.calculator.feature4.description}
                 </label>
                 <br />
                 <select
@@ -212,15 +234,23 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.navButtons}
                 >
-                  <option value="none">None</option>
-                  <option value="1-to-3">From 1 to 3</option>
-                  <option value="4-to-6">From 4 to 6</option>
-                  <option value="7-or-more">From 7 or more</option>
+                  <option value="none">
+                    {t.services.calculator.feature4.option1}
+                  </option>
+                  <option value="1-to-3">
+                    {t.services.calculator.feature4.option2}
+                  </option>
+                  <option value="4-to-6">
+                    {t.services.calculator.feature4.option3}
+                  </option>
+                  <option value="7-or-more">
+                    {t.services.calculator.feature4.option4}
+                  </option>
                 </select>
               </li>
               <li className={`${styles.feature}`}>
                 <label htmlFor="animations">
-                  How many animations are required?
+                  {t.services.calculator.feature5.description}
                 </label>
                 <br />
                 <select
@@ -229,15 +259,23 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.animations}
                 >
-                  <option value="none">None</option>
-                  <option value="1-to-2">From 1 to 2</option>
-                  <option value="3-to-4">From 3 to 4</option>
-                  <option value="5-or-more">From 5 or more</option>
+                  <option value="none">
+                    {t.services.calculator.feature5.option1}
+                  </option>
+                  <option value="1-to-2">
+                    {t.services.calculator.feature5.option2}
+                  </option>
+                  <option value="3-to-4">
+                    {t.services.calculator.feature5.option3}
+                  </option>
+                  <option value="5-or-more">
+                    {t.services.calculator.feature5.option4}
+                  </option>
                 </select>
               </li>
               <li className={`${styles.feature}`}>
                 <label htmlFor="languages">
-                  Do you need translation to another languages?
+                  {t.services.calculator.feature6.description}
                 </label>
                 <br />
                 <select
@@ -246,15 +284,23 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.languages}
                 >
-                  <option value="none">None</option>
-                  <option value="1">To spanish</option>
-                  <option value="2">2 extra languages</option>
-                  <option value="3-or-more">3 or more languages</option>
+                  <option value="none">
+                    {t.services.calculator.feature6.option1}
+                  </option>
+                  <option value="1">
+                    {t.services.calculator.feature6.option2}
+                  </option>
+                  <option value="2">
+                    {t.services.calculator.feature6.option3}
+                  </option>
+                  <option value="3-or-more">
+                    {t.services.calculator.feature6.option4}
+                  </option>
                 </select>
               </li>
               <li className={`${styles.feature}`}>
                 <label htmlFor="themes">
-                  Do you want dark mode or extra themes?
+                  {t.services.calculator.feature7.description}
                 </label>
                 <br />
                 <select
@@ -263,15 +309,23 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.themes}
                 >
-                  <option value="none">None</option>
-                  <option value="dark">Dark mode</option>
-                  <option value="2-themes">Dark and sepia mode</option>
-                  <option value="3-or-more">3 or more themes</option>
+                  <option value="none">
+                    {t.services.calculator.feature7.option1}
+                  </option>
+                  <option value="dark">
+                    {t.services.calculator.feature7.option2}
+                  </option>
+                  <option value="2-themes">
+                    {t.services.calculator.feature7.option3}
+                  </option>
+                  <option value="3-or-more">
+                    {t.services.calculator.feature7.option4}
+                  </option>
                 </select>
               </li>
               <li className={`${styles.feature}`}>
                 <label htmlFor="analytics">
-                  Which Google tools do you require?
+                  {t.services.calculator.feature8.description}
                 </label>
                 <br />
                 <select
@@ -280,25 +334,32 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.analytics}
                 >
-                  <option value="none">None</option>
-                  <option value="google-analytics">Google Analytics</option>
+                  <option value="none">
+                    {t.services.calculator.feature8.option1}
+                  </option>
+                  <option value="google-analytics">
+                    {t.services.calculator.feature8.option2}
+                  </option>
                   <option value="full-configuration">
-                    Analytics and Search Console
+                    {t.services.calculator.feature8.option3}
                   </option>
                 </select>
               </li>
             </ol>
             <p className={`${styles.disclaimer} fs-200`}>
-              If you are not sure about a category, checkout our&nbsp;
-              <a href="#">products</a> for more info or feel free to&nbsp;
-              <a href="https://wa.me/message/QNWKISFC6MBJI1">contact us</a>.
+              {t.services.calculator.disclaimer.part1}&nbsp;
+              <a href="#">{t.services.calculator.disclaimer.productsLink}</a>&nbsp;
+              {t.services.calculator.disclaimer.part2}&nbsp;
+              <a href="https://wa.me/message/QNWKISFC6MBJI1">
+                {t.services.calculator.disclaimer.contactLink}
+              </a>.
             </p>
             <div className={styles.result}>
-              <h2 className="ff-sans-title fs-600">The approximate cost is:</h2>
+              <h2 className="ff-sans-title fs-600">{t.services.calculator.estCost}</h2>
               <p className={`${styles.price}`}>
                 <span className="fs-500">$</span>
-                {quote}
-                <span className="fs-500">.00</span>
+                {quote * t.services.calculator.change}
+                <span className="fs-500">.00 {t.services.calculator.currency}</span>
               </p>
               <input
                 type="email"
@@ -311,7 +372,7 @@ const WebappCalculator = () => {
                 type="submit"
                 className={`btn btn-primary uppercase ff-sans-title ${styles.submitBtn}`}
               >
-                Send quote
+                {t.services.calculator.quoteBtn}
               </button>
             </div>
           </form>

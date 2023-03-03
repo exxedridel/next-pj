@@ -69,7 +69,7 @@
 }
 
 .submitBtn {
-  width: 9rem;
+  min-width: 9rem;
   padding-block: 9px 10px;
   background: hsl(var(--pale-blue));
   border-color: hsl(var(--pale-blue));
