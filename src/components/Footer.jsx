@@ -1,12 +1,15 @@
+import { useContext } from "react";
+import AppContext from "@/context/AppContext";
 import Image from "next/image";
 import styles from "./Footer.module.css";
 
 function Footer() {
+  const { t } = useContext(AppContext);
   return (
     <footer className={`${styles.footer}`}>
       <div className="container">
         <p>
-          © Set<b>apps</b>™ 2023 - Todos los derechos reservados.
+          © Set<b>apps</b>™ 2023 - {t.footer.rights}
         </p>
         <span>
           <a href="https://google.com">

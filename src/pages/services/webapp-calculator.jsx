@@ -141,13 +141,13 @@ const WebappCalculator = () => {
       <main id="main-content" className={`${styles.main} container flow`}>
         <section id="webapp-calculator" className="flow-normal">
           <h2 className={`${styles.title} ff-sans-title fs-600`}>
-            Select the features your web app needs:
+            {t.services.calculator.instructions}
           </h2>
           <form onSubmit={handleSubmit}>
             <ol className={`${styles.features}`}>
               <li className={`${styles.feature}`}>
                 <label htmlFor="webType">
-                  What kind of Web App do you need?
+                  {t.services.calculator.feature1.description}
                 </label>
                 <br />
                 <select
@@ -156,17 +156,17 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.webType}
                 >
-                  <option value="none">None</option>
-                  <option value="landing-page">Landing page</option>
+                  <option value="none">{t.services.calculator.feature1.option1}</option>
+                  <option value="landing-page">{t.services.calculator.feature1.option2}</option>
                   <option value="interactive-website">
-                    Interactive web site
+                  {t.services.calculator.feature1.option3}
                   </option>
-                  <option value="blog-like">Blog like</option>
-                  <option value="e-commerce">E-commerce</option>
+                  <option value="blog-like">{t.services.calculator.feature1.option4}</option>
+                  <option value="e-commerce">{t.services.calculator.feature1.option5}</option>
                 </select>
               </li>
               <li className={`${styles.feature}`}>
-                <label htmlFor="design">Do you need design services?</label>
+                <label htmlFor="design">{t.services.calculator.feature2.description}</label>
                 <br />
                 <select
                   id="design"
@@ -174,12 +174,12 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.design}
                 >
-                  <option value="none">None</option>
+                  <option value="none">{t.services.calculator.feature2.option1}</option>
                   <option value="designer-service">
-                    Yes, need my own design
+                  {t.services.calculator.feature2.option2}
                   </option>
-                  <option value="from-sketch">No, Ive a sketch</option>
-                  <option value="from-design">No, already got it</option>
+                  <option value="from-sketch">{t.services.calculator.feature2.option3}</option>
+                  <option value="from-design">{t.services.calculator.feature2.option4}</option>
                 </select>
               </li>
               <li className={`${styles.feature}`}>

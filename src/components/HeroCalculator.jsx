@@ -1,7 +1,11 @@
+import { useContext } from "react";
+import AppContext from "@/context/AppContext";
 import Image from "next/image";
 import styles from "./HeroCalculator.module.css";
 
 const HeroCalculator = () => {
+  const { t } = useContext(AppContext);
+
   function scrollToContent() {
     const element = document.getElementById("main-content");
     element.scrollIntoView();
@@ -17,16 +21,15 @@ const HeroCalculator = () => {
         priority
       />
       <div className={styles.title}>
-        <h1>Setapps <br /> Calculator</h1>
+        <h1>{t.services.calculator.title}</h1>
         <p className="fs-500">
-          With this Setapps&lsquo; tool you can quote how much your desired web
-          app it&apos;s going to cost.
+          {t.services.calculator.description}
         </p>
         <button
           onClick={scrollToContent}
           className={`${styles.heroBtn} btn btn-primary uppercase ff-sans-title`}
         >
-          Lets start
+          {t.services.calculator.startBtn}
         </button>
       </div>
     </section>

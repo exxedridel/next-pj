@@ -122,12 +122,12 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  {t.navbar.language}{" "}
+                  {t.navbar.language} &nbsp;
                   <Image
                     src="/translate.png"
                     alt="translate icon"
-                    width={32}
-                    height={32}
+                    width={28}
+                    height={28}
                     priority
                   />
                 </a>

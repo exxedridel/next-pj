@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import AppContext from "@/context/AppContext";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./HomeCards.module.css";
 
 const HomeCards = () => {
+  const { t } = useContext(AppContext);
   return (
     <section className={styles.homeCards}>
       
@@ -25,12 +28,9 @@ const HomeCards = () => {
             />
           </div>
           <div className={`${styles.info}`}>
-            <h3>Reliable Technology</h3>
+            <h3>{t.home.advantage.title1}</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Obcaecati consequuntur veniam nulla error dignissimos assumenda
-              excepturi fuga quae, dolorum eius minus ad suscipit beatae commodi
-              eligendi culpa aperiam hic at.
+            {t.home.advantage.description1}
             </p>
           </div>
         </Link>
@@ -53,12 +53,9 @@ const HomeCards = () => {
             />
           </div>
           <div className={`${styles.info}`}>
-            <h3>Long-Term Solutions</h3>
+            <h3>{t.home.advantage.title2}</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Obcaecati consequuntur veniam nulla error dignissimos assumenda
-              excepturi fuga quae, dolorum eius minus ad suscipit beatae commodi
-              eligendi culpa aperiam hic at.
+             {t.home.advantage.description2}
             </p>
           </div>
         </Link>
@@ -81,12 +78,9 @@ const HomeCards = () => {
             />
           </div>
           <div className={`${styles.info}`}>
-            <h3>Customer Oriented</h3>
+            <h3>{t.home.advantage.title3}</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Obcaecati consequuntur veniam nulla error dignissimos assumenda
-              excepturi fuga quae, dolorum eius minus ad suscipit beatae commodi
-              eligendi culpa aperiam hic at.
+            {t.home.advantage.description3}
             </p>
           </div>
         </Link>
