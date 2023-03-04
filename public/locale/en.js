@@ -142,7 +142,7 @@ export default {
       title: "Landing page",
       image: "/landing-page.png",
       description:
-        "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
+        "Convert your visitors into customers or leads by encouraging them to take a specific action, such as filling out a form, making a purchase, or signing up for a newsletter. Landing pages are typically focused on a single call-to-action (CTA) and are designed to be visually appealing and persuasive.",
       links: ["https://google.com"],
       isCurrent: true,
     },

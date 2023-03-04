@@ -142,7 +142,7 @@ export default {
       title: "Página de Contacto",
       image: "/landing-page.png",
       description:
-        "1Español ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
+        'Convierte a tus visitantes en clientes o prospectos animándolos a que hagan alguna acción en específico, como llenar un formulario, realizar alguna compra, o registrarse a un boletín informativo. Las páginas de contacto se enfocan tipicamente en un "llamado a conectar" y están diseñadas para ser visualmente atractivas y persuasivas.',
       links: ["https://google.com"],
       isCurrent: true,
     },
