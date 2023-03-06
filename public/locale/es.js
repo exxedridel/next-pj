@@ -127,11 +127,6 @@ export default {
       quoteBtn: "Enviar cotización",
     },
   },
-  about: {
-    pageTitle: "Acerca",
-    title: "Acerca",
-    description: "Esta es la página de información.",
-  },
   productsPage: {
     title: "Selecciona uno de nuestros productos:",
     example: "Ejemplo",
@@ -142,7 +137,7 @@ export default {
       title: "Página de Contacto",
       image: "/landing-page.png",
       description:
-        'Convierte a tus visitantes en clientes o prospectos animándolos a que hagan alguna acción en específico, como llenar un formulario, realizar alguna compra, o registrarse a un boletín informativo. Las páginas de contacto se enfocan tipicamente en un "llamado a conectar" y están diseñadas para ser visualmente atractivas y persuasivas.',
+        'Convierte a tus visitantes en clientes animándolos a realizar alguna acción en específico; llenar un formulario, hacer alguna compra, o seguirte en redes sociales. Las páginas de contacto se enfocan tipicamente en un "llamado a conectar" y están diseñadas para ser visualmente atractivas.',
       links: ["https://google.com"],
       isCurrent: true,
     },
@@ -151,8 +146,8 @@ export default {
       title: "Sitio Web Interactivo",
       image: "/interactive-website.png",
       description:
-        "2Español ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
-      links: ["https://google.com", "https://instagram.com"],
+        "Un sitio web que permite a los usuarios interactuar y engancharse con su contenido más allá de solo mostrar la información, les permite participar activamente en la experiencia, por ejemplo; chats en tiempo real, mapas, gráficas o visualizaciones interactivas con la información.",
+      links: ["https://google.com"],
       isCurrent: false,
     },
     {
@@ -160,7 +155,7 @@ export default {
       title: "Tipo Blog",
       image: "/blog-like.png",
       description:
-        "3Español ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
+        "Contiene publicaciones o artículos actualizados regularmente por diferentes usuarios dentro de la app, ya que la información aquí no es estática necesita una base de datos para almacenar varia información y también un sistema de acceso seguro que permita a la gente nueva acceder o no.",
       links: ["https://google.com"],
       isCurrent: false,
     },
@@ -169,15 +164,16 @@ export default {
       title: "Comercio Virtual",
       image: "/e-commerce.png",
       description:
-        "4Español ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
-      links: [
-        "https://google.com",
-        "https://instagram.com",
-        "https://youtube.com",
-      ],
+        "Permite a usuarios registrados comprar y vender bienes o servicios en internet. De esta manera tu negocio puede incrementar sus ventas y operar 24/7 sin la necesidad de una tienda física o de pagar comisiones tiendas online de terceros. Requieren buena seguridad, la cual te proveemos.",
+      links: ["https://google.com"],
       isCurrent: false,
     },
   ],
+  about: {
+    pageTitle: "Acerca",
+    title: "Acerca",
+    description: "Esta es la página de información.",
+  },
   footer: {
     rights: "Todos los derechos reservados.",
     followUs: "Síguenos en:",

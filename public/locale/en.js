@@ -127,11 +127,6 @@ export default {
       quoteBtn: "Send Quote",
     },
   },
-  about: {
-    pageTitle: "About",
-    title: "About",
-    description: "This is the information page.",
-  },
   productsPage: {
     title: "Select one of our products:",
     example: "Example",
@@ -151,8 +146,8 @@ export default {
       title: "Interactive website",
       image: "/interactive-website.png",
       description:
-        "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
-      links: ["https://google.com", "https://instagram.com"],
+        "A website that allows users to engage and interact with its content. It goes beyond simply displaying information and enables users to actively participate in the experience, by example; live chat or messaging systems, interactive maps, graphs, or visualizations that allow users interact with data. ",
+      links: ["https://google.com"],
       isCurrent: false,
     },
     {
@@ -160,7 +155,7 @@ export default {
       title: "Blog like",
       image: "/blog-like.png",
       description:
-        "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
+        "Contains regularly updated posts or articles writen by different users within the webpage or app, since the information here is not static needs a data base to store several information. In the top of that requires a login system that allows people over the internet to post something new.",
       links: ["https://google.com"],
       isCurrent: false,
     },
@@ -169,15 +164,16 @@ export default {
       title: "Electronic commerce",
       image: "/e-commerce.png",
       description:
-        "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus illo natus? Aperiam omnis eius minima? Dignissimos, labore? Eum, voluptatem? Quia atque voluptatibus sit dolorem rem eos reprehenderit. Illo, dolorem!",
-      links: [
-        "https://google.com",
-        "https://instagram.com",
-        "https://youtube.com",
-      ],
+        "Allows registered users to buy and sell goods or services over the internet. This way businesses can reach a wider customer base and sell their products and services 24/7 without the need for a physical store or to pay fees to 3rd party online stores. Requires strong security which we can provide.",
+      links: ["https://google.com"],
       isCurrent: false,
     },
   ],
+  about: {
+    pageTitle: "About",
+    title: "About",
+    description: "This is the information page.",
+  },
   footer: {
     rights: "All rights reserved.",
     followUs: "Follow us:",

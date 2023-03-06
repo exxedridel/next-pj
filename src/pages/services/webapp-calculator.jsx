@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import AppContext from "@/context/AppContext";
 import { send } from "emailjs-com";
 import Head from "next/head";
+import Link from "next/link";
 import HeroCalculator from "@/components/HeroCalculator";
 import styles from "@/styles/Webapp-calculator.module.css";
 
@@ -348,7 +349,7 @@ const WebappCalculator = () => {
             </ol>
             <p className={`${styles.disclaimer} fs-200`}>
               {t.services.calculator.disclaimer.part1}&nbsp;
-              <a href="#">{t.services.calculator.disclaimer.productsLink}</a>
+              <Link href="/products">{t.services.calculator.disclaimer.productsLink}</Link>
               &nbsp;
               {t.services.calculator.disclaimer.part2}&nbsp;
               <a href="https://wa.me/message/QNWKISFC6MBJI1">
