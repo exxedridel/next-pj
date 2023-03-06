@@ -1,7 +1,11 @@
+import { useContext, useEffect } from "react";
+import AppContext from "@/context/AppContext";
 import Image from "next/image";
 import styles from "./AboutHeader.module.css";
 
 const AboutHeader = () => {
+  const { t, setAboutActive } = useContext(AppContext);
+
   return (
     <section className={`${styles.hero} `}>
       <div className="container">
@@ -29,9 +33,7 @@ const AboutHeader = () => {
             Company
           </h1>
           <p className="fs-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut culpa
-            quos expedita maiores aperiam, consequuntur, quisquam rerum
-            reprehenderit dolorum quasi nisi magni, labore alias vitae. Saepe!
+            {t.about.description}
           </p>
         </div>
       </div>
