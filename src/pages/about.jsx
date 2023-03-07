@@ -20,7 +20,7 @@ const About = () => {
     <>
       <Head>
         <title>{`Setapps | ${t.about.pageTitle}`}</title>
-        <meta name="description" content="About Setapps Company" />
+        <meta name="description" content={t.about.pageDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -28,43 +28,39 @@ const About = () => {
         <AboutHeader />
         <hr className={styles.hr} />
         <article className={`${styles.mision} container`}>
-          <h2>Our Mission</h2>
-          <p>
-            To simplify the process of making our customers product vision come
-            to life. And to leverage our extensive experience to help expand
-            that vision and deliver delight.
-          </p>
+          <h2>{t.about.mission.title}</h2>
+          <p>{t.about.mission.description}</p>
         </article>
         <article className={`${styles.values} container`}>
-          <h2>Our Values</h2>
+          <h2>{t.about.values.title}</h2>
           <div className={styles.elements}>
             <div className={styles.value}>
-              <h3>Lorem, ipsum dolor</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+              <h3>{t.about.values.value1}</h3>
+              <p>{t.about.values.description1}</p>
             </div>
             <div className={styles.value}>
-              <h3>Lorem, ipsum dolor</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+              <h3>{t.about.values.value2}</h3>
+              <p>{t.about.values.description2}</p>
             </div>
             <div className={styles.value}>
-              <h3>Lorem, ipsum dolor</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+              <h3>{t.about.values.value3}</h3>
+              <p>{t.about.values.description3}</p>
             </div>
             <div className={styles.value}>
-              <h3>Lorem, ipsum dolor</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+              <h3>{t.about.values.value4}</h3>
+              <p>{t.about.values.description4}</p>
             </div>
             <div className={styles.value}>
-              <h3>Lorem, ipsum dolor</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+              <h3>{t.about.values.value5}</h3>
+              <p>{t.about.values.description5}</p>
             </div>
             <div className={styles.value}>
-              <h3>Lorem, ipsum dolor</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+              <h3>{t.about.values.value6}</h3>
+              <p>{t.about.values.description6}</p>
             </div>
           </div>
         </article>
-        <ContactForm/>
+        <ContactForm />
       </main>
     </>
   );

@@ -28,7 +28,7 @@ export default function Home() {
         <title>{`Setapps | ${t.home.pageTitle}`}</title>
         <meta
           name="description"
-          content="WebApp development and all related to make 'em sustainable."
+          content={t.home.pageDescription}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

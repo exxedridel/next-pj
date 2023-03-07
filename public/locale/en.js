@@ -8,7 +8,7 @@ export default {
     products: "PRODUCTS",
     about: "ABOUT",
     language: "IDIOMA",
-    contactUs: "LET´S CONNECT",
+    contactUs: "LET'S CONNECT",
   },
   hero: {
     title1: "We make your",
@@ -21,6 +21,7 @@ export default {
   },
   home: {
     pageTitle: "Home",
+    pageDescription: "",
     title1: "Our Services",
     p1: 'We are a "software as a service" development company, which means, we can translate business ideas into a sustainable app always available on the web.',
     webappDev: {
@@ -44,15 +45,17 @@ export default {
         "You're in good hands. All of our Web App building platforms are based on the same stack of technologies currently used by companies like Netflix, Uber, Twitch, Nike, Airbnb, GitHub, Hulu, Marvel, Lyft, among many others.",
       title2: "Customer Oriented",
       description2:
-        "Your satisfaction in being our client is the key aspect of Setapps, you leverage the one hundred percent guarantee, which means the process in the creation of your product doesn't conclude until you can verify it's quality and results.",
+        "Your satisfaction in being our client is the key aspect of Setapps, you leverage the one hundred percent guarantee, which means the process in the creation of your product doesn't conclude until you can verify its quality and results.",
       title3: "Free Maintenance",
       description3:
-        "You can trust your product its going to be able for your customers 24/7 since we handle all of the on-going fixes, updates and improvements your Web App may need to work properly over the time.",
+        "You can trust your product it's going to be able for your customers 24/7 since we handle all of the on-going fixes, updates and improvements your Web App may need to work properly over the time.",
     },
     title3: "Quote your web app now!",
     quoteBtn: "Quote",
   },
   services: {
+    calculatorTitle: "Web App Calculator",
+    pageDescription: "Quote your desired WebApp here.",
     calculator: {
       title: "Setapps Calculator",
       description:
@@ -116,7 +119,7 @@ export default {
         option3: "Analytics and Search Console",
       },
       disclaimer: {
-        part1: "If you are not sure about a category checkout our",
+        part1: "If you are not sure about a category check out our",
         productsLink: "products",
         part2: "for more info, or feel free to",
         contactLink: "contact us",
@@ -128,6 +131,8 @@ export default {
     },
   },
   productsPage: {
+    pageTitle: "Products",
+    pageDescription: "Chech out our different packages.",
     title: "Select one of our products:",
     example: "Example",
   },
@@ -155,7 +160,7 @@ export default {
       title: "Blog like",
       image: "/blog-like.png",
       description:
-        "Contains regularly updated posts or articles writen by different users within the webpage or app, since the information here is not static needs a data base to store several information. In the top of that requires a login system that allows people over the internet to post something new.",
+        "Contains regularly updated posts or articles writen by different users within the webpage or app, since the information here is not static it needs a data base to store several information and also requires a secure login system that allow new people access or not.",
       links: ["https://google.com"],
       isCurrent: false,
     },
@@ -171,37 +176,39 @@ export default {
   ],
   about: {
     pageTitle: "About",
+    pageDescription: "We operate in USA and Mexico, let's connect.",
     description: "We are a United States and Mexico based company with talent from all over the world. We work remotely and with agile methodology. We make your vision come to life.",
-    Mission: {
-      title: "",
-      description: "",
+    mission: {
+      title: "Our Mission",
+      description: "To simplify the process of making delightful Web Apps, thus providing our clients with agile and realiable solutions to make their bussinesses grow and more profitable.",
     },
-    Values: {
-      title: "",
-      value1: "",
-      description1: "",
-      value2: "",
-      description2: "",
-      value3: "",
-      description3: "",
-      value4: "",
-      description4: "",
-      value5: "",
-      description5: "",
-      value6: "",
-      description6: "",
+    values: {
+      title: "Our Values",
+      value1: "Strive to excel",
+      description1: "We strive to raise our bar, always",
+      value2: "Do the right thing",
+      description2: "Even when no one is watching",
+      value3: "Innovate",
+      description3: "Find ways of doing it better, faster",
+      value4: "Delightful products",
+      description4: "Because it's lot of fun that way",
+      value5: "Own your stuff",
+      description5: "We're leaders, no one is let down",
+      value6: "Stay focused",
+      description6: "Do what you do best and keep learning",
     },
     contactForm: {
-      title: "",
-      description: "",
-      email: "",
+      title: "Would you like to reach out the team?",
+      description: "We will be glad to hear you!",
+      email: "Enter you email:",
       topics: {
-        careers: "",
-        partnership: "",
-        issues: "",
+        title: "What's the topic?",
+        careers: "Careers",
+        partnership: "Partnership",
+        issues: "Issues in this site",
       },
-      message: "",
-      inquiryBtn: "",
+      message: "Write a message for the team:",
+      inquiryBtn: "Send inquiry",
     },
   },
   footer: {

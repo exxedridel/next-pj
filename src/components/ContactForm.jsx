@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import AppContext from "@/context/AppContext";
 import { send } from "emailjs-com";
-import Image from "next/image";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
+  const { t, setAboutActive } = useContext(AppContext);
   const [departmentRoute, setDepartmentRoute] = useState("");
   const [formContact, setFormContact] = useState({
     fromEmail: "",
@@ -68,11 +69,11 @@ const ContactForm = () => {
 
   return (
     <section className={`${styles.contact} container`}>
-      <h2>Do you want to reach out the team?</h2>
-      <p>We will be glad to hear you!</p>
+      <h2>{t.about.contactForm.title}</h2>
+      <p>{t.about.contactForm.description}</p>
       <form onSubmit={handleSubmit} className={`${styles.form}`} action="">
         <div className={styles.element}>
-          <label htmlFor="fromEmail">Enter you email:</label>
+          <label htmlFor="fromEmail">{t.about.contactForm.email}</label>
           <br />
           <input
             name="fromEmail"
@@ -83,7 +84,7 @@ const ContactForm = () => {
           />
         </div>
         <div className={styles.element}>
-          <label htmlFor="department">Whats the topic?</label>
+          <label htmlFor="department">{t.about.contactForm.topics.title}</label>
           <br />
           <select
             name="department"
@@ -91,13 +92,13 @@ const ContactForm = () => {
             onChange={handleChange}
             value={formContact.department}
           >
-            <option value="careers">Careers</option>
-            <option value="partnership">Partnership</option>
-            <option value="support">Issues in this site</option>
+            <option value="careers">{t.about.contactForm.topics.careers}</option>
+            <option value="partnership">{t.about.contactForm.topics.partnership}</option>
+            <option value="support">{t.about.contactForm.topics.issues}</option>
           </select>
         </div>
         <div className={styles.element}>
-          <label htmlFor="message">Write a message for the team:</label>
+          <label htmlFor="message">{t.about.contactForm.message}</label>
           <br />
           <textarea
             name="message"
@@ -109,7 +110,7 @@ const ContactForm = () => {
           ></textarea>
         </div>
         <button type="submit" className={styles.button}>
-          Send inquiry
+        {t.about.contactForm.inquiryBtn}
         </button>
       </form>
     </section>

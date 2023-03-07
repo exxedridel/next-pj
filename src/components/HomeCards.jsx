@@ -8,7 +8,7 @@ const HomeCards = () => {
   const { t } = useContext(AppContext);
   return (
     <section className={styles.homeCards}>
-      <Link className={styles.card} href="/services/webapp-calculator">
+      <Link className={styles.card} href="https://nextjs.org/">
         <Image
           className={styles.image}
           src="/nextjs-framework.png"
@@ -33,7 +33,7 @@ const HomeCards = () => {
           <p>{t.home.advantage.description1}</p>
         </div>
       </Link>
-      <Link className={styles.card} href="/products">
+      <Link className={styles.card} href="/about">
         <Image
           className={styles.image}
           src="/satisfaction.jpg"
@@ -58,7 +58,7 @@ const HomeCards = () => {
           <p>{t.home.advantage.description2}</p>
         </div>
       </Link>
-      <Link className={styles.card} href="/about">
+      <Link className={styles.card} href="/products">
         <Image
           className={styles.image}
           src="/always-up.jpg"

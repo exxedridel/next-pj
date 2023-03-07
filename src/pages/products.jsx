@@ -26,7 +26,7 @@ const Products = () => {
   return (
     <>
       <Head>
-        <title>{`Setapps | Products`}</title>
+        <title>{`Setapps | ${t.productsPage.pageTitle}`}</title>
         <meta name="description" content="Our products to help you decide" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

@@ -132,8 +132,8 @@ const WebappCalculator = () => {
   return (
     <>
       <Head>
-        <title>{`Setapps | WebApp Calculator`}</title>
-        <meta name="description" content="Quote your desired Web App." />
+        <title>{`Setapps | ${t.services.calculatorTitle}`}</title>
+        <meta name="description" content={t.services.pageDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
