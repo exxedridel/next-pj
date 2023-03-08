@@ -193,7 +193,7 @@ export default {
       value4: "Delightful products",
       description4: "Because it's lot of fun that way",
       value5: "Own your stuff",
-      description5: "We're leaders, no one is let down",
+      description5: "Be the leader, no one is let down",
       value6: "Stay focused",
       description6: "Do what you do best and keep learning",
     },
