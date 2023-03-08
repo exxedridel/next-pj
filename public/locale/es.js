@@ -48,7 +48,7 @@ export default {
         "Tu satisfacción al ser nuestro cliente es el valor principal que te brinda Setapps ya que el proceso en la creación de tu proyecto no acaba hasta que estás cien porciento satisfecho con tu producto y puedas comprobar sus resultados.",
       title3: "Mantenimiento Gratuito",
       description3:
-        "Puedes confiar en que tu producto estará disponible para tus clientes 24/7 ya que hacemos todas las reparaciones, actualizaciones y mejoras que tu Web App pueda necesitar para funcionar con el paso del tiempo adecuadamente.",
+        "Puedes confiar en que tu producto estará disponible para tus clientes 24/7 ya que hacemos todas las reparaciones, actualizaciones y mejoras que tu Web App pueda necesitar para funcionar bien con el paso del tiempo.",
     },
     title3: "¡Cotiza aquí tu web app!",
     quoteBtn: "Cotizar",
@@ -193,7 +193,7 @@ export default {
       value4: "Productos encantadores",
       description4: "Porque es mucho más satisfactorio así",
       value5: "Crecer juntos",
-      description5: "Cuantos más amigos, mejor",
+      description5: "Preferimos crecer como comunidad",
       value6: "Estar enfocados",
       description6: "Hacemos lo que mejor sabemos y más allá",
     },
