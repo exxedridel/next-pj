@@ -8,7 +8,7 @@ const ContactForm = () => {
   const [departmentRoute, setDepartmentRoute] = useState("");
   const [formContact, setFormContact] = useState({
     fromEmail: "",
-    department: "",
+    department: "careers",
     message: "",
     replyTo: "",
   });
@@ -51,7 +51,7 @@ const ContactForm = () => {
       "BPmyVw0Oabp2X1Bjw"
     )
       .then((response) => {
-        alert(`SUCCESS! We will get back to you as soon as possible.`);
+        alert(`${t.about.contactForm.successMsg}`);
       })
       .catch((err) => {
         alert(`ERROR ${err.status}: ${err.text}`);
@@ -61,7 +61,7 @@ const ContactForm = () => {
 
     setFormContact({
       fromEmail: "",
-      department: "",
+      department: "careers",
       message: "",
       replyTo: "",
     });

@@ -18,9 +18,11 @@
   color: hsl(var(--black) / 0.6);
   font-weight: 500;
 }
+
 .nextTabNav h1 {
   margin-bottom: 2rem;
 }
+
 .btnDiv {
   display: flex;
   justify-content: center;

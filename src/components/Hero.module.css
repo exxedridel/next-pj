@@ -8,7 +8,7 @@
 .bgImage {
   background-size: cover;
   width: 100%;
-  height: 65vh;
+  height: 75vh;
   object-fit: cover;
   opacity: 1;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
@@ -16,21 +16,22 @@
 /* Tablet & Landscape */
 @media (min-width: 35em) {
   .bgImage {
-    height: clamp(380px, 35vw, 752px);
+    height: clamp(450px, 35vw, 752px);
   }
 }
 /* Desktop */
 @media (min-width: 58em) {
   .bgImage {
-    height: 82.5vh;
-  }
-}
-/* Ultra wide */
-@media (min-width: 1700px) {
-  .bgImage {
+    /* height: 82.5vh; */
     height: 92.9vh;
   }
 }
+/* Ultra wide */
+/* @media (min-width: 1700px) {
+  .bgImage {
+    height: 92.9vh;
+  }
+} */
 
 .overlap {
   position: absolute;

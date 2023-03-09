@@ -115,7 +115,7 @@ const WebappCalculator = () => {
     event.preventDefault();
     send("service_wqoab4a", "template_s4wp7mu", formData, "BPmyVw0Oabp2X1Bjw")
       .then((response) => {
-        alert(`SUCCESS! Check your email!`);
+        alert(`${t.services.calculator.successMsg}`);
       })
       .catch((err) => {
         alert(`ERROR ${err.status}: ${err.text}`);

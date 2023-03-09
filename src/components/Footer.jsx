@@ -12,7 +12,7 @@ function Footer() {
           © Set<b>apps</b>™ 2023 - {t.footer.rights}
         </p>
         <span>
-          <a href="https://google.com">
+          <a href="https://linkedin.com">
             <Image
               className={styles.brandLogo}
               src="/linkedin.png"
@@ -22,7 +22,7 @@ function Footer() {
               priority
             />
           </a>
-          <a href="https://google.com">
+          <a href="https://twitter.com">
             <Image
               className={styles.brandLogo}
               src="/twitter.png"
@@ -32,7 +32,7 @@ function Footer() {
               priority
             />
           </a>
-          <a href="https://google.com">
+          <a href="https://facebook.com">
             <Image
               className={styles.brandLogo}
               src="/facebook.png"

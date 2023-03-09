@@ -1,0 +1,27 @@
+.heroFixed {
+  margin-top: clamp(4.25rem, 5.5vw + 1rem, 6.5rem);
+  background-image: url("/bird-sunsets.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.fadeText {
+  color: white;
+  font-family: var(--ff-sans-title);
+  font-size: var(--fs-800);
+}
+
+@media (max-width: 58em) {
+  .heroFixed {
+    background-attachment: scroll;
+    height: 35vh;
+    border-radius: 0px;
+  }
+}

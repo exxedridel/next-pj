@@ -2,8 +2,8 @@ export default {
   navbar: {
     home: "HOME",
     services: "SERVICES",
-    services1: "Web App calculator",
-    services2: "Logo-svg creation",
+    services1: "Quote Web App",
+    services2: "Svg logo creation",
     services3: "Marketing for your site",
     products: "PRODUCTS",
     about: "ABOUT",
@@ -21,7 +21,9 @@ export default {
   },
   home: {
     pageTitle: "Home",
-    pageDescription: "",
+    pageDescription:
+      "Web App development and everything around it to make 'em sustainable.",
+    banner: "Go beyond limits.",
     title1: "Our Services",
     p1: 'We are a "software as a service" development company, which means, we can translate business ideas into a sustainable app always available on the web.',
     webappDev: {
@@ -128,6 +130,7 @@ export default {
       change: 1,
       currency: "usd",
       quoteBtn: "Send Quote",
+      successMsg: "SUCCESS! Check out your email :)",
     },
   },
   productsPage: {
@@ -177,10 +180,12 @@ export default {
   about: {
     pageTitle: "About",
     pageDescription: "We operate in USA and Mexico, let's connect.",
-    description: "We are a United States and Mexico based company with talent from all over the world. We work remotely and with agile methodology. We make your vision come to life.",
+    description:
+      "We are a United States and Mexico based company with talent from all over the world. We work remotely and with agile methodology. We make your vision come to life.",
     mission: {
       title: "Our Mission",
-      description: "To simplify the process of making delightful Web Apps, thus providing our clients with agile and realiable solutions to make their bussinesses grow and more profitable.",
+      description:
+        "To simplify the process of making delightful Web Apps, thus providing our clients with agile and realiable solutions to make their bussinesses grow and more profitable.",
     },
     values: {
       title: "Our Values",
@@ -209,6 +214,7 @@ export default {
       },
       message: "Write a message for the team:",
       inquiryBtn: "Send inquiry",
+      successMsg: "SUCCESS! We will get back to you as soon as possible :)",
     },
   },
   footer: {

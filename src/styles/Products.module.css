@@ -1,5 +1,5 @@
 .main {
-  min-height: 71vh;
+  min-height: 76vh;
   display: flex;
   align-items: center;
 }
@@ -44,7 +44,7 @@
 .tabList > * {
   border: none;
   background-color: transparent;
-  color: hsl(var(--pale-blue));
+  color: hsl(var(--black) /0.75);
   text-transform: uppercase;
   padding: 0;
   width: min-content;
@@ -53,11 +53,11 @@
 }
 .tabList > *:hover,
 .tabList > *:hover {
-  border-bottom: 2px solid hsl(var(--pale-blue));
+  border-bottom: 2px solid hsl(var(--pale-blue) /0.8);
 }
 .tabList > [aria-current="true"] {
-  color: hsl(var(--blue-selected) /0.85);
-  border-bottom: 2px solid hsl(var(--blue-selected) /0.85);
+  color: hsl(var(--pale-blue) /0.85);
+  border-bottom: 2px solid hsl(var(--pale-blue));
 }
 
 .destinationInfo {
@@ -96,6 +96,7 @@
 .destinationMeta h3 {
   max-width: 100%;
 }
+
 .button {
   width: max-content;
   text-decoration: none;

@@ -3,7 +3,7 @@ export default {
     home: "INICIO",
     services: "SERVICIOS",
     services1: "Cotizador Web App",
-    services2: "Creación de Logo-svg",
+    services2: "Creación de logo svg",
     services3: "Marketing para tu sitio",
     products: "PRODUCTOS",
     about: "ACERCA",
@@ -21,7 +21,8 @@ export default {
   },
   home: {
     pageTitle: "Inicio",
-    pageDescription: "Desarrollo de WebApps y todo lo necesario para hacerlas sustentables.",
+    pageDescription: "Desarrollo de Web Apps y todo lo necesario para hacerlas sustentables.",
+    banner: "Sobrepasa los límites.",
     title1: "Nuestros Servicios",
     p1: 'Somos una empresa de desarrollo de "software como servicio", lo que significa que podemos traducir ideas de negocios en una app sostenible y siempre disponible en la web.',
     webappDev: {
@@ -54,10 +55,10 @@ export default {
     quoteBtn: "Cotizar",
   },
   services: {
-    calculatorTitle: "Cotizador WebApp",
-    pageDescription: "Cotiza tu WebApp deseada aquí.",
+    calculatorTitle: "Cotizador Web App",
+    pageDescription: "Cotiza tu Web App deseada aquí.",
     calculator: {
-      title: "Cotizador Setapps",
+      title: "Cotizador Web App",
       description:
         "Con esta herramienta de Setapps puedes cotizar cuanto va a costar la Web App que deseas, pero si necesitas una tarifa más exacta, por favor contáctanos.",
       startBtn: "Empecemos",
@@ -128,6 +129,7 @@ export default {
       change: 18,
       currency: "mxn",
       quoteBtn: "Enviar cotización",
+      successMsg: "¡Enviado! Revisa tu email :)",
     },
   },
   productsPage: {
@@ -142,7 +144,7 @@ export default {
       title: "Página de Contacto",
       image: "/landing-page.png",
       description:
-        'Convierte a tus visitantes en clientes animándolos a realizar alguna acción en específico; llenar un formulario, hacer alguna compra, o seguirte en redes sociales. Las páginas de contacto se enfocan tipicamente en un "llamado a conectar" y están diseñadas para ser visualmente atractivas.',
+        'Convierte a tus visitantes en clientes animándolos a realizar alguna acción en específico; llenar un formulario, hacer alguna compra, o seguirte en redes sociales. Las páginas de contacto se enfocan tipicamente en un "llamado a la acción" y están diseñadas para ser visualmente persuasivas.',
       links: ["https://www.ffelixarchitecture.com/"],
       isCurrent: true,
     },
@@ -203,12 +205,13 @@ export default {
       email: "Ingresa tu email:",
       topics: {
         title: "¿Cuál es el asunto?",
-        careers: "Ofertas laborales",
+        careers: "Oferta laboral",
         partnership: "Asociación",
         issues: "Problemas en este sitio",
       },
       message: "Escribe tu mensaje para el equipo:",
       inquiryBtn: "Enviar Consulta",
+      successMsg: "¡Enviado! Te responderemos lo más pronto posible :)",
     },
   },
   footer: {

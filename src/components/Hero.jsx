@@ -8,8 +8,14 @@ const Hero = () => {
   const { mainRef } = useContext(AppContext);
 
   function scrollToContent() {
-    const element = document.getElementById("main-content");
-    element.scrollIntoView();
+    const elBanner = document.getElementById("banner");
+    const elMainCont = document.getElementById("main-content");
+    setTimeout(() => {
+      elBanner.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+    setTimeout(() => {
+      elMainCont.scrollIntoView({ behavior: 'smooth' });
+    }, 2500);
   }
 
   return (

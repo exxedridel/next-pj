@@ -3,13 +3,11 @@ import AppContext from "@/context/AppContext";
 import Link from "next/link";
 import Head from "next/head";
 import Hero from "@/components/Hero";
+import BannerFixed from "@/components/BannerFixed";
 import GridContainer from "@/components/GridContainer";
 import GridContainerRev from "@/components/GridContainerRev";
 import HomeCards from "@/components/HomeCards";
 import styles from "@/styles/Home.module.css";
-
-// import { Inter } from "@next/font/google";
-// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const { t, setHomeActive } = useContext(AppContext);
@@ -26,14 +24,12 @@ export default function Home() {
     <>
       <Head>
         <title>{`Setapps | ${t.home.pageTitle}`}</title>
-        <meta
-          name="description"
-          content={t.home.pageDescription}
-        />
+        <meta name="description" content={t.home.pageDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <Hero />
+      <BannerFixed />
 
       <main id="main-content" className="container flow">
         <section className={`${styles.header} text-center`}>
