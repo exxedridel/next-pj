@@ -143,7 +143,7 @@ export default {
       image: "/landing-page.png",
       description:
         'Convierte a tus visitantes en clientes animándolos a realizar alguna acción en específico; llenar un formulario, hacer alguna compra, o seguirte en redes sociales. Las páginas de contacto se enfocan tipicamente en un "llamado a conectar" y están diseñadas para ser visualmente atractivas.',
-      links: ["https://google.com"],
+      links: ["https://www.ffelixarchitecture.com/"],
       isCurrent: true,
     },
     {
@@ -152,7 +152,7 @@ export default {
       image: "/interactive-website.png",
       description:
         "Un sitio web que permite a los usuarios interactuar y engancharse con su contenido más allá de solo mostrar la información, les permite participar activamente en la experiencia, por ejemplo; chats en tiempo real, mapas, gráficas o visualizaciones interactivas con la información.",
-      links: ["https://google.com"],
+      links: ["https://chevewings.com/"],
       isCurrent: false,
     },
     {
@@ -161,7 +161,7 @@ export default {
       image: "/blog-like.png",
       description:
         "Contiene publicaciones o artículos actualizados regularmente por diferentes usuarios dentro de la app, ya que la información aquí no es estática necesita una base de datos para almacenar varia información y también un sistema de acceso seguro que permita a la gente nueva unirse o no.",
-      links: ["https://google.com"],
+      links: ["https://blog.hubspot.com/"],
       isCurrent: false,
     },
     {
@@ -170,7 +170,7 @@ export default {
       image: "/e-commerce.png",
       description:
         "Permite a usuarios registrados comprar y vender bienes o servicios en internet. De esta manera los negocios pueden incrementar sus ventas y operar 24/7 sin la necesidad de una tienda física o de pagar comisiones a tiendas online de terceros. Requieren fuerte seguridad, la cual te proveemos.",
-      links: ["https://google.com"],
+      links: ["https://chilangoskate.com/tienda/"],
       isCurrent: false,
     },
   ],
@@ -193,7 +193,7 @@ export default {
       value4: "Productos encantadores",
       description4: "Porque es mucho más satisfactorio así",
       value5: "Crecer juntos",
-      description5: "Preferimos crecer como comunidad",
+      description5: "Para hacer círculos virtuosos",
       value6: "Estar enfocados",
       description6: "Hacemos lo que mejor sabemos y más allá",
     },
@@ -203,7 +203,7 @@ export default {
       email: "Ingresa tu email:",
       topics: {
         title: "¿Cuál es el asunto?",
-        careers: "Trabajos",
+        careers: "Ofertas laborales",
         partnership: "Asociación",
         issues: "Problemas en este sitio",
       },

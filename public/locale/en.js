@@ -143,7 +143,7 @@ export default {
       image: "/landing-page.png",
       description:
         "Convert your visitors into customers or leads by encouraging them to take a specific action, such as filling out a form, making a purchase, or signing up for a newsletter. Landing pages are typically focused on a single call-to-action (CTA) and are designed to be visually appealing and persuasive.",
-      links: ["https://google.com"],
+      links: ["https://www.ffelixarchitecture.com/"],
       isCurrent: true,
     },
     {
@@ -152,7 +152,7 @@ export default {
       image: "/interactive-website.png",
       description:
         "A website that allows users to engage and interact with its content. It goes beyond simply displaying information and enables users to actively participate in the experience, by example; live chat or messaging systems, interactive maps, graphs, or visualizations that allow users interact with data. ",
-      links: ["https://google.com"],
+      links: ["https://chevewings.com/"],
       isCurrent: false,
     },
     {
@@ -161,7 +161,7 @@ export default {
       image: "/blog-like.png",
       description:
         "Contains regularly updated posts or articles writen by different users within the webpage or app, since the information here is not static it needs a data base to store several information and also requires a secure login system that allow new people access or not.",
-      links: ["https://google.com"],
+      links: ["https://blog.hubspot.com/"],
       isCurrent: false,
     },
     {
@@ -170,7 +170,7 @@ export default {
       image: "/e-commerce.png",
       description:
         "Allows registered users to buy and sell goods or services over the internet. This way businesses can reach a wider customer base and sell their products and services 24/7 without the need for a physical store or to pay fees to 3rd party online stores. Requires strong security which we can provide.",
-      links: ["https://google.com"],
+      links: ["https://chilangoskate.com/tienda/"],
       isCurrent: false,
     },
   ],
@@ -193,7 +193,7 @@ export default {
       value4: "Delightful products",
       description4: "Because it's more satisfying that way",
       value5: "Grow together",
-      description5: "We prefer grow as community",
+      description5: "To create virtuous circles",
       value6: "Stay focused",
       description6: "Do what you do best and keep learning",
     },

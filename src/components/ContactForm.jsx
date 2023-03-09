@@ -4,7 +4,7 @@ import { send } from "emailjs-com";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
-  const { t, setAboutActive } = useContext(AppContext);
+  const { t } = useContext(AppContext);
   const [departmentRoute, setDepartmentRoute] = useState("");
   const [formContact, setFormContact] = useState({
     fromEmail: "",
@@ -14,9 +14,9 @@ const ContactForm = () => {
   });
 
   const departmentEmail = {
-    careers: "hevedrios@gmail.com",
-    partnership: "exxed.ridel@gmail.com",
-    support: "hord.27591@gmail.com",
+    careers: "careers@setapps.co",
+    partnership: "sales@setapps.co",
+    support: "support@setapps.co",
   };
 
   useEffect(() => {

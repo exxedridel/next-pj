@@ -1,6 +1,6 @@
 .footer {
   margin-top: clamp(4.25rem, 5.5vw + 1rem, 6.5rem);
-  padding-block: 3.12rem;
+  padding-block: 2.2rem;
   background-color: hsl(var(--black) /0.85);
   color: hsl(var(--whitesmoke));
 }
@@ -20,9 +20,6 @@
   margin-inline: 8px;
 }
 @media (min-width: 35em) {
-  .footer {
-    padding-block: 3.56rem;
-  }
   .footer div {
     flex-direction: row;
     justify-content: space-between;
