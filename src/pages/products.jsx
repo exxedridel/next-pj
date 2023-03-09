@@ -28,7 +28,7 @@ const Products = () => {
     <>
       <Head>
         <title>{`Setapps | ${t.productsPage.pageTitle}`}</title>
-        <meta name="description" content="Our products to help you decide" />
+        <meta name="description" content={t.productsPage.pageDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
