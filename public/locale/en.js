@@ -217,8 +217,20 @@ export default {
       successMsg: "SUCCESS! We will get back to you as soon as possible :)",
     },
   },
+  privacy: {
+    pageTitle: "Privacy Policy",
+    pageDescription: "Setapps Privacy Policy",
+    title: "PRIVACY POLICY",
+    date: "Last modification 03/03/2023",
+    p1: "As of the date of publication of this document, Setapps™ does not collect any type of personal information during navigation of this site or when using its features.",
+    li1: "The emails provided by the user through the forms are exclusively for contact in case of requesting information from the site or the company, which are not shared with third parties nor used for any other reason, and do not reach any database other than the company's inbox.",
+    p2: "The only information we collect is strictly to measure the performance of the website, as specified below:",
+    li2: "Information about the devices or computers from which you access this platform and other data captured automatically (such as browser or operating system type and version, settings, connection data, and parameters).",
+    li3: "Internet Protocol (IP) address that you use to connect to the website.",
+    p3: "Our services are only for those over 18 years old and all provision and/or service is guaranteed by a legal contract in accordance with the laws and recommendations of the region in which the client operates or will operate.",
+  },
   footer: {
     rights: "All rights reserved.",
-    followUs: "Follow us:",
+    privacyLink: "Privacy policy",
   },
 };

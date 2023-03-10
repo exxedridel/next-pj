@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import AppContext from "@/context/AppContext";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.css";
 
@@ -7,6 +8,9 @@ function Footer() {
   const { t } = useContext(AppContext);
   return (
     <footer className={`${styles.footer}`}>
+      <div className={`${styles.privacyLink}`}>
+        <Link href="/privacy-policy">{t.footer.privacyLink}</Link>
+      </div>
       <div className="container">
         <p>
           © Set<b>apps</b>™ 2023 - {t.footer.rights}

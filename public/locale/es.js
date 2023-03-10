@@ -21,7 +21,8 @@ export default {
   },
   home: {
     pageTitle: "Inicio",
-    pageDescription: "Desarrollo de Web Apps y todo lo necesario para hacerlas sustentables.",
+    pageDescription:
+      "Desarrollo de Web Apps y todo lo necesario para hacerlas sustentables.",
     banner: "Sobrepasa los límites.",
     title1: "Nuestros Servicios",
     p1: 'Somos una empresa de desarrollo de "software como servicio", lo que significa que podemos traducir ideas de negocios en una app sostenible y siempre disponible en la web.',
@@ -179,10 +180,12 @@ export default {
   about: {
     pageTitle: "Acerca",
     pageDescription: "Operamos en México y Estados Unidos, contáctanos.",
-    description: "Somos una empresa basada en México y Estados Unidos  con talento de todas partes del mundo. Trabajamos remotamente y con metodología ágil. Hacemos de tu visión una realidad.",
+    description:
+      "Somos una empresa basada en México y Estados Unidos  con talento de todas partes del mundo. Trabajamos remotamente y con metodología ágil. Hacemos de tu visión una realidad.",
     mission: {
       title: "Nuestra Misión",
-      description: "Simplificar el proceso de hacer Web Apps encantadoras para proveer a nuestros clientes con soluciones ágiles y confiables que hagan a sus negocios crecer y ser más rentables.",
+      description:
+        "Simplificar el proceso de hacer Web Apps encantadoras para proveer a nuestros clientes con soluciones ágiles y confiables que hagan a sus negocios crecer y ser más rentables.",
     },
     values: {
       title: "Nuestros Valores",
@@ -214,8 +217,20 @@ export default {
       successMsg: "¡Enviado! Te responderemos lo más pronto posible :)",
     },
   },
+  privacy: {
+    pageTitle: "Aviso de Privacidad",
+    pageDescription: "Aviso de Privacidad de Setapps",
+    title: "AVISO DE PRIVACIDAD",
+    date: "Última modificación 03/03/2023",
+    p1: "Hasta la fecha de edición del presente, Setapps™ no recolecta ningún tipo de información personal durante la navegación de este sitio o al hacer uso de sus características.",
+    li1: "Los emails que el usuario proporciona a través de los formularios son exclusivamente para contacto en caso de solicitar alguna información del sitio o de la empresa, los cuales no se compraten con terceros ni son utilizados para ningún otro motivo, no llegan a ninguna base de datos más que la bandeja de la compañia.",
+    p2: "La única información que recopilamos es estrictamente para medir el rendimiento del sitio web, como a continuación se especifíca:",
+    li2: "Información de los dispositivos o computadoras desde los que accedes a esta plataforma y otros datos capturados automáticamente (como el tipo y versión del navegador o del sistema operativo, configuraciones, datos de conexión y parámetros).",
+    li3: "Dirección IP de internet que utilizas al conectarte al sitio web.",
+    p3: "Nuestros servicios son únicamente para mayores de 18 años y toda prestación y/o servicio queda garantizada por un contrato legal de acuerdo a las leyes y recomendaciones de la región en la que opera u operará el cliente.",
+  },
   footer: {
     rights: "Todos los derechos reservados.",
-    followUs: "Síguenos en:",
+    privacyLink: "Aviso de privacidad",
   },
 };

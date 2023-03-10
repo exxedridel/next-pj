@@ -4,6 +4,16 @@
   background-color: hsl(var(--black) /0.85);
   color: hsl(var(--whitesmoke));
 }
+
+.privacyLink a {
+  margin-inline: auto;
+  color: hsl(var(--whitesmoke) /0.7);
+  margin-bottom: 0.5rem;
+}
+.privacyLink a:hover {
+  color: hsl(var(--whitesmoke));
+}
+
 .footer div {
   display: flex;
   flex-direction: column;
