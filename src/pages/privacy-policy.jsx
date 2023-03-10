@@ -3,7 +3,7 @@ import AppContext from "@/context/AppContext";
 import Head from "next/head";
 import styles from "@/styles/Privacy-policy.module.css";
 
-const privacyPolicy = () => {
+const PrivacyPolicy = () => {
   const { t } = useContext(AppContext);
   return (
     <>
@@ -52,4 +52,4 @@ const privacyPolicy = () => {
   );
 };
 
-export default privacyPolicy;
+export default PrivacyPolicy;
