@@ -36,7 +36,7 @@ export default {
     brandSEO: {
       title: "Gestión de marca",
       subtitle1: "Procedimientos comprobados",
-      p1: "Usamos algorítmos que han tenído éxito en grandes empresas para crear y construir tu marca, tanto a nivel técnico como a nivel emocional para darle su propia personalidad.",
+      p1: "Usamos algoritmos que han tenído éxito en grandes empresas para crear y construir tu marca tanto a nivel técnico como a nivel emocional para darle su propia personalidad.",
       subtitle2: "Optimización en motores de búsqueda",
       p2: "Tu Web App se registra en el índice de Google para que tu marca pueda ser encontrada fácilmente por tu público objetivo, basta con una búsqueda en la web.",
     },
@@ -145,7 +145,7 @@ export default {
       title: "Página de Contacto",
       image: "/landing-page.png",
       description:
-        'Convierte a tus visitantes en clientes animándolos a realizar alguna acción en específico; llenar un formulario, hacer alguna compra, o seguirte en redes sociales. Las páginas de contacto se enfocan tipicamente en un "llamado a la acción" y están diseñadas para ser visualmente persuasivas.',
+        'Convierte a tus visitantes en clientes animándolos a realizar alguna acción en específico; llenar un formulario, hacer alguna compra, o seguirte en redes sociales. Las páginas de contacto se enfocan típicamente en un "llamado a la acción" y están diseñadas para ser visualmente persuasivas.',
       links: ["https://www.ffelixarchitecture.com/"],
       isCurrent: true,
     },
@@ -208,7 +208,7 @@ export default {
       email: "Ingresa tu email:",
       topics: {
         title: "¿Cuál es el asunto?",
-        careers: "Oferta laboral",
+        careers: "Carreras disponibles",
         partnership: "Asociación",
         issues: "Problemas en este sitio",
       },
@@ -222,8 +222,8 @@ export default {
     pageDescription: "Aviso de Privacidad de Setapps",
     title: "AVISO DE PRIVACIDAD",
     date: "Última modificación 03/03/2023",
-    p1: "Hasta la fecha de edición del presente, Setapps™ no recolecta ningún tipo de información personal durante la navegación de este sitio o al hacer uso de sus características.",
-    li1: "Los emails que el usuario proporciona a través de los formularios son exclusivamente para contacto en caso de solicitar alguna información del sitio o de la empresa, los cuales no se compraten con terceros ni son utilizados para ningún otro motivo, no llegan a ninguna base de datos más que la bandeja de la compañia.",
+    p1: "Hasta la fecha de edición del presente Setapps™ no recolecta ningún tipo de información personal durante la navegación de este sitio o al hacer uso de sus características.",
+    li1: "Los emails que el usuario proporciona a través de los formularios son exclusivamente para contacto en caso de solicitar alguna información del sitio o de la empresa, los cuales no se comparten con terceros ni son utilizados para ningún otro motivo, no llegan a ninguna base de datos más que la bandeja de la compañia.",
     p2: "La única información que recopilamos es estrictamente para medir el rendimiento del sitio web, como a continuación se especifíca:",
     li2: "Información de los dispositivos o computadoras desde los que accedes a esta plataforma y otros datos capturados automáticamente (como el tipo y versión del navegador o del sistema operativo, configuraciones, datos de conexión y parámetros).",
     li3: "Dirección IP de internet que utilizas al conectarte al sitio web.",

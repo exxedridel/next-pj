@@ -36,7 +36,7 @@ export default {
     brandSEO: {
       title: "Branding",
       subtitle1: "Mature procedures",
-      p1: "We use algorithms that have been successful in well-known companies to create and build your brand, both technically and emotionally to give it its own personality.",
+      p1: "We use algorithms that have been successful in well-known companies to create and build your brand both, technically and emotionally to give it its own personality.",
       subtitle2: "Search engine optimization",
       p2: "Your Web App will be registered in the Google index, in this way your brand can be found easily by your target audience just doing a web search.",
     },
@@ -163,7 +163,7 @@ export default {
       title: "Blog like",
       image: "/blog-like.png",
       description:
-        "Contains regularly updated posts or articles writen by different users within the webpage or app, since the information here is not static it needs a data base to store several information and also requires a secure login system that allow new people access or not.",
+        "Contains regularly updated posts or articles writen by different users within the webpage or app, since the information here is not static it needs a data base to store several information and also requires a secure login system that allows new people access or not.",
       links: ["https://blog.hubspot.com/"],
       isCurrent: false,
     },
@@ -208,7 +208,7 @@ export default {
       email: "Enter you email:",
       topics: {
         title: "What's the topic?",
-        careers: "Careers",
+        careers: "Available careers",
         partnership: "Partnership",
         issues: "Issues in this site",
       },
@@ -222,7 +222,7 @@ export default {
     pageDescription: "Setapps Privacy Policy",
     title: "PRIVACY POLICY",
     date: "Last modification 03/03/2023",
-    p1: "As of the date of publication of this document, Setapps™ does not collect any type of personal information during navigation of this site or when using its features.",
+    p1: "As of the date of publication of this document Setapps™ does not collect any type of personal information during navigation of this site or when using its features.",
     li1: "The emails provided by the user through the forms are exclusively for contact in case of requesting information from the site or the company, which are not shared with third parties nor used for any other reason, and do not reach any database other than the company's inbox.",
     p2: "The only information we collect is strictly to measure the performance of the website, as specified below:",
     li2: "Information about the devices or computers from which you access this platform and other data captured automatically (such as browser or operating system type and version, settings, connection data, and parameters).",
