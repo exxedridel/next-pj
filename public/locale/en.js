@@ -61,7 +61,7 @@ export default {
     calculator: {
       title: "Web App Calculator",
       description:
-        "With this Setapps' tool you can quote how much your desired Web App it's going to cost, but if you need a more accurate rate, please contact us.",
+        "With this Setapps' tool you can quote how much your desired Web App it's going to cost, but if you need a more accurate rate please contact us.",
       startBtn: "Let's Start",
       instructions: "Select the features your Web App needs:",
       feature1: {

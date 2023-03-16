@@ -1,10 +1,10 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import AppContext from "@/context/AppContext";
 import Image from "next/image";
 import styles from "./AboutHeader.module.css";
 
 const AboutHeader = () => {
-  const { t, setAboutActive } = useContext(AppContext);
+  const { t } = useContext(AppContext);
 
   return (
     <section className={`${styles.hero} `}>
@@ -22,7 +22,7 @@ const AboutHeader = () => {
             <Image
               className={styles.logo}
               src="/setapps.webp"
-              alt="Linkedin logo"
+              alt="setapps logo"
               width={64}
               height={64}
               priority

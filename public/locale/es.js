@@ -61,7 +61,7 @@ export default {
     calculator: {
       title: "Cotizador Web App",
       description:
-        "Con esta herramienta de Setapps puedes cotizar cuanto va a costar la Web App que deseas, pero si necesitas una tarifa más exacta, por favor contáctanos.",
+        "Con esta herramienta de Setapps puedes cotizar cuanto va a costar la Web App que deseas, pero si necesitas una tarifa más exacta por favor contáctanos.",
       startBtn: "Empecemos",
       instructions: "Selecciona las características que tu Web App necesita:",
       feature1: {
