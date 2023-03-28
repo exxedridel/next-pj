@@ -9,11 +9,11 @@ const About = () => {
   const { t, setAboutActive } = useContext(AppContext);
 
   useEffect(() => {
-    setAboutActive("active");
+    setAboutActive("active");   
     return function () {
       setAboutActive("");
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, []);
 
   return (

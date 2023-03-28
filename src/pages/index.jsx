@@ -1,4 +1,5 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
+import MoonLoader from "react-spinners/MoonLoader";
 import AppContext from "@/context/AppContext";
 import Link from "next/link";
 import Head from "next/head";
@@ -11,13 +12,18 @@ import styles from "@/styles/Home.module.css";
 
 export default function Home() {
   const { t, setHomeActive } = useContext(AppContext);
+  let [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1250);
+
     setHomeActive("active");
     return function () {
       setHomeActive("");
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -28,7 +34,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <Hero />
+      {loading ? (
+        <div className={styles.loader}>
+          <MoonLoader
+            color={"hsl(var(--pale-blue))"}
+            loading={loading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      ) : (
+        <Hero />
+      )}
+
       <BannerFixed />
 
       <main id="main-content" className="container flow">
@@ -44,6 +63,7 @@ export default function Home() {
         <h1 className={`${styles.h1} text-center`}>{t.home.title2}</h1>
 
         <HomeCards />
+
         <section className={styles.nextTabNav}>
           <h1 className={`${styles.h1} text-center`}>{t.home.title3}</h1>
           <Link className={styles.btnDiv} href="/services/webapp-calculator">

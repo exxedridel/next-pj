@@ -15,7 +15,7 @@ const Products = () => {
     return function () {
       setProductsActive("");
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, []);
 
   function handleClick(index) {
