@@ -21,7 +21,7 @@
   letter-spacing: 2px;
 }
 .title p {
-  color: hsl(var(--black) /0.75);
+  color: hsl(var(--whitesmoke) /0.75);
 }
 .appDevImg {
   max-width: 100%;

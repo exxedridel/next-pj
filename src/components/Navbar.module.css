@@ -2,7 +2,7 @@
   position: absolute;
   z-index: -1;
   background: hsl(var(--whitesmoke));
-  color: hsl(var(--clr-dark));
+  color: hsl(var(--black));
   text-decoration: underline;
   padding: 0.5em 1em;
   margin-inline: auto;
@@ -17,7 +17,7 @@
 
 .navCont {
   margin-block: 4px;
-  background-color: hsl(var(--whitesmoke));
+  background-color: hsl(var(--dark-blue-gray));
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
 }
 
@@ -45,6 +45,10 @@ a.navLink,
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.usIcon{
+  margin-right: 2.5px;
 }
 
 .navBtn {

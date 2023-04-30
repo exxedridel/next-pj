@@ -5,7 +5,8 @@
   border-radius: 6px;
   padding-block: 2rem;
   max-width: 90%;
-  background-color: hsl(var(--black) / 0.033);
+  background-color: hsl(var(--dark-blue-gray));
+  color: hsl(var(--whitesmoke) /0.85)
 }
 
 .contact h2 {
@@ -42,8 +43,8 @@
 .element select,
 .element textarea {
   font-size: var(--fs-200);
-  color: hsl(var(--black));
-  background-color: hsl(var(--whitesmoke));
+  color: hsl(var(--whitesmoke));
+  background-color: hsl(var(--whitesmoke) /0.3);
   border: 1px solid hsl(var(--pale-blue));
 }
 
@@ -57,6 +58,11 @@
   width: 30ch;
   padding: 3px;
   border-radius: 15px;
+}
+
+.element select option {
+  background-color: hsl(var(--black) /0.9);
+  color: hsl(var(--whitesmoke) /0.75);
 }
 .element textarea {
   width: 100%;

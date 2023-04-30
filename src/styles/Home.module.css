@@ -23,7 +23,7 @@
   margin-bottom: 0.6em;
 }
 .header > p {
-  color: hsl(var(--black) / 0.6);
+  color: hsl(var(--whitesmoke) / 0.8);
   font-weight: 500;
 }
 

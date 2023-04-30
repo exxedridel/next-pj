@@ -14,7 +14,7 @@ const Navbar = () => {
       <button onClick={mainFocus} className={styles.SkipToContent}>
         Skip to content
       </button>
-      <nav className={`navbar navbar-expand-lg  ${styles.navCont}`}>
+      <nav className={`navbar navbar-expand-lg navbar-dark ${styles.navCont}`}>
         <div className={`container-fluid container`}>
           <Link
             href="/"
@@ -24,8 +24,8 @@ const Navbar = () => {
               src="/setapps-logo.svg"
               alt="Setapps Logo"
               className={styles.logo}
-              width={26}
-              height={26}
+              width={30}
+              height={30}
               priority
             />
             Set<b>apps</b>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 >
                   {t.navbar.services}
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                   <li>
                     <Link
                       href="/services/webapp-calculator"
@@ -124,22 +124,23 @@ const Navbar = () => {
                 >
                   {t.navbar.language} &nbsp;
                   <Image
-                    src="/translate.png"
+                    src="/translate-white.png"
                     alt="translate icon"
                     width={28}
                     height={28}
                     priority
                   />
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className={`${styles.langFlex} dropdown-item`} href="/" locale="en">
                       English&nbsp;
                       <Image
+                        className={styles.usIcon}
                         src="/united-states.png"
                         alt="usa icon"
-                        width={23}
-                        height={23}
+                        width={21.5}
+                        height={21.5}
                         priority
                       />
                     </Link>

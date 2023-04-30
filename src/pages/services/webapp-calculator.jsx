@@ -185,7 +185,7 @@ const WebappCalculator = () => {
                   onChange={handleChange}
                   value={formData.design}
                 >
-                  <option value="none">
+                  <option className="puta" value="none">
                     {t.services.calculator.feature2.option1}
                   </option>
                   <option value="designer-service">

@@ -27,12 +27,16 @@
 }
 .feature > select {
   font-size: var(--fs-200);
-  color: hsl(var(--black));
+  color: hsl(var(--whitesmoke));
   background-color: hsl(var(--black) /0.05);
   width: 14rem;
   padding: 3px;
   border: 1px solid hsl(var(--pale-blue));
   border-radius: 15px;
+}
+.feature select option {
+  background-color: hsl(var(--dark-blue-gray));
+  color: hsl(var(--whitesmoke) /0.75);
 }
 
 .disclaimer {

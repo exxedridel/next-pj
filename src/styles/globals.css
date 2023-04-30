@@ -5,6 +5,13 @@
 :root {
   /* colors */
   --brand-color: 147 55% 50%;
+  /* #39c678 */
+  --brand-color-dark: 220 56% 23%;
+  /* #1a305b */
+  --dark-blue: 210, 100%, 2%;
+  /* #000408 */
+  --dark-blue-gray: 210, 29%, 7%;
+  /* #0c1116 */
   --pale-blue: 204 66% 40%;
   --blue-selected: 215 90% 44%;
   --whitesmoke: 0 0% 96%;
@@ -52,8 +59,8 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: hsl(var(--whitesmoke));
-  color: hsl(var(--black));
+  background-color: hsl(var(--dark-blue));
+  color: hsl(var(--whitesmoke));
   font-size: var(--fs-400);
   line-height: 1.5;
 }

@@ -44,7 +44,7 @@
 .tabList > * {
   border: none;
   background-color: transparent;
-  color: hsl(var(--black) /0.75);
+  color: hsl(var(--whitesmoke) /0.7);
   text-transform: uppercase;
   padding: 0;
   width: min-content;
@@ -53,10 +53,10 @@
 }
 .tabList > *:hover,
 .tabList > *:hover {
-  border-bottom: 2px solid hsl(var(--pale-blue) /0.8);
+  border-bottom: 2px solid hsl(var(--pale-blue) /0.7);
 }
 .tabList > [aria-current="true"] {
-  color: hsl(var(--pale-blue) /0.85);
+  color: hsl(var(--pale-blue) /1);
   border-bottom: 2px solid hsl(var(--pale-blue));
 }
 

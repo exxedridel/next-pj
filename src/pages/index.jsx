@@ -37,7 +37,7 @@ export default function Home() {
       {loading ? (
         <div className={styles.loader}>
           <MoonLoader
-            color={"hsl(var(--pale-blue))"}
+            color={"white"}
             loading={loading}
             size={50}
             aria-label="Loading Spinner"

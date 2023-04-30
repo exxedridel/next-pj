@@ -16,7 +16,7 @@
 }
 .mision p {
   font-size: var(--fs-500);
-  color: hsl(var(--black) / 0.7);
+  color: hsl(var(--whitesmoke) / 0.8);
   max-width: 80ch;
   line-height: 1.8;
 }

@@ -8,13 +8,13 @@
 
 .card {
   text-decoration: none;
-  color: grey;
+  color: hsl(var(--whitesmoke) /0.8);
   flex-basis: 330px;
-  border: none;
+  border: 1px solid hsl(var(--whitesmoke) /0.1);
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: hsl(var(--dark-blue-gray));
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   cursor: pointer;
