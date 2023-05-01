@@ -43,9 +43,9 @@
 .element select,
 .element textarea {
   font-size: var(--fs-200);
-  color: hsl(var(--whitesmoke));
-  background-color: hsl(var(--whitesmoke) /0.3);
-  border: 1px solid hsl(var(--pale-blue));
+  color: hsl(var(--whitesmoke) /0.8);
+  background-color: hsl(var(--dark-blue));
+  border: 1px solid hsl(var(--whitesmoke) /0.2);
 }
 
 .element input {
