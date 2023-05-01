@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className={`${styles.footer}`}>
       <div className={`${styles.privacyLink}`}>
-        <Link href="/privacy-policy">{t.footer.privacyLink}</Link>
+        <Link href="/privacy-policy">{t.footer.privacyLink} &raquo;</Link>
       </div>
       <div className="container">
         <p>
