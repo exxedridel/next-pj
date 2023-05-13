@@ -21,16 +21,15 @@ const AboutHeader = () => {
           <h1>
             <Image
               className={styles.logo}
-              src="/setapps.webp"
+              src="/setapps-bg-logo.svg"
               alt="setapps logo"
-              width={64}
-              height={64}
+              width={86}
+              height={86}
               priority
             />
             <span>
               Set<b>apps</b>
-            </span>{" "}
-            Company
+            </span>
           </h1>
           <p className="fs-500">
             {t.about.description}

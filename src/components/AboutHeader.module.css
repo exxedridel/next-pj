@@ -19,6 +19,8 @@
 }
 .logo {
   display: inline;
+  border-radius: 50%;
+  border: 2px solid hsl(var(--whitesmoke) /0.2)
 }
 .title h1 {
   font-family: var(--ff-sans-title);
