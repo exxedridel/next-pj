@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#383838" />
         <meta name="msapplication-TileColor" content="#f5f5f5" />
-        <meta name="theme-color" content="#f5f5f5" />
+        <meta name="theme-color" content="#000408" />
       </Head>
 
       <AppContext.Provider value={appState}>
