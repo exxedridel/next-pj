@@ -22,7 +22,7 @@ const Tests1 = () => {
     }
   };
 
-  const fixFormatDate = (timestamp) => {
+  const formatDate = (timestamp) => {
     const parseTimestamp = parseISO(timestamp);
     return format(parseTimestamp, "dd/MM/yyyy HH:mm:ss", { timeZone });
   };
@@ -43,7 +43,7 @@ const Tests1 = () => {
             <div>description: {task.description}</div>
             <div>isDone: {task.isDone}</div>
             <div>fechaRespuesta: {task.createdAt}</div>
-            <div>fechaFormated: {fixFormatDate(task.createdAt)}</div>
+            <div>fechaFormated: {formatDate(task.createdAt)}</div>
           </div>
         ))}
       </div>
