@@ -9,7 +9,7 @@ const timeZone =
     ? Intl.DateTimeFormat().resolvedOptions().timeZone
     : "America/Mexico_City";
 
-const tests1 = () => {
+const Tests1 = () => {
   const [tasks, setTasks] = useState();
 
   const getTasks = async () => {
@@ -51,4 +51,4 @@ const tests1 = () => {
   );
 };
 
-export default tests1;
+export default Tests1;
