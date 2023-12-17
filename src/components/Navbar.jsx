@@ -5,9 +5,14 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  const { t, homeActive, servicesActive, productsActive, aboutActive } =
-    useContext(AppContext);
-  const { mainFocus } = useContext(AppContext);
+  const {
+    t,
+    homeActive,
+    servicesActive,
+    productsActive,
+    aboutActive,
+    mainFocus,
+  } = useContext(AppContext);
 
   return (
     <>
@@ -63,7 +68,10 @@ const Navbar = () => {
                 >
                   {t.navbar.services}
                 </a>
-                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <ul
+                  className="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
                     <Link
                       href="/services/webapp-calculator"
@@ -131,9 +139,16 @@ const Navbar = () => {
                     priority
                   />
                 </a>
-                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <ul
+                  className="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
-                    <Link className={`${styles.langFlex} dropdown-item`} href="/" locale="en">
+                    <Link
+                      className={`${styles.langFlex} dropdown-item`}
+                      href="/"
+                      locale="en"
+                    >
                       English&nbsp;
                       <Image
                         className={styles.usIcon}
@@ -149,7 +164,11 @@ const Navbar = () => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <Link className={`${styles.langFlex} dropdown-item`} href="/" locale="es">
+                    <Link
+                      className={`${styles.langFlex} dropdown-item`}
+                      href="/"
+                      locale="es"
+                    >
                       Español&nbsp;
                       <Image
                         src="/mexico.png"
